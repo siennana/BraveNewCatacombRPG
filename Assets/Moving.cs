@@ -13,6 +13,6 @@ public class Moving : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Translate(3 * Input.GetAxis("Horizontal") * Time.deltaTime, -3 * Input.GetAxis("Vertical") * Time.deltaTime,0f);   
     }
 }
