@@ -15,4 +15,10 @@ public class Moving : MonoBehaviour
     {
         transform.Translate(3 * Input.GetAxis("Horizontal") * Time.deltaTime, -3 * Input.GetAxis("Vertical") * Time.deltaTime,0f);   
     }
+
+    public void MoveForward()
+    {
+        transform.Translate(0f, -5, 0.5f);
+
+    }
 }
