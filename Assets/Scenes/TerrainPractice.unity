@@ -216,9 +216,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5da596f9d33aa4487903143a835927e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 1134200865}
+  Player: {fileID: 1134200867}
   offset: {x: 0.15, y: 5, z: 3}
-  playerRotation: {x: 0, y: 0, z: 0}
+  _rotationSpeed: 180
 --- !u!1001 &543371822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -603,6 +603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationSpeed: 180
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!65 &1134200868
 BoxCollider:
   m_ObjectHideFlags: 0

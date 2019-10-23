@@ -6,7 +6,7 @@ public class Moving : MonoBehaviour
 {
     public float _rotationSpeed = 180;
 
-    private Vector3 rotation;
+    public Vector3 rotation;
     // Start is called before the first frame update
     void Start()
     {

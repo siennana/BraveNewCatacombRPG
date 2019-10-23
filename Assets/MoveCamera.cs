@@ -1,23 +1,24 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿//using System.Collections;
+//using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveCamera : MonoBehaviour
 {
-    public GameObject Player;
+    public Moving Player;
     public Vector3 offset;
-    public Vector3 playerRotation;
 
     void Start()
     {
         offset = transform.position - Player.transform.position;
     }
 
- 
     void LateUpdate()
     {
-        //transform.rotation = transform.rotation* Quaternion.AngleAxis(Player.transform.rotation.y, Vector3.up);
-        transform.position = Player.transform.position + offset;
 
+        var rot = Input.GetAxisRaw("Horizontal") * Time.deltaTime * 180;
+        this.transform.RotateAround(Player.transform.position, Vector3.up,rot);
+        offset = Quaternion.AngleAxis(rot, Vector3.up) * offset;
+        transform.Translate(0f, 0f, 3 * Input.GetAxis("Vertical") * Time.deltaTime);
+        transform.position = Player.transform.position + offset;
     }
 }
