@@ -32,7 +32,6 @@ public class Moving : MonoBehaviour
 
         if (controller.isGrounded)
         {
-            anim.SetBool("Jump", false);
             verticalVelocity = -gravity * Time.deltaTime;
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -49,7 +48,10 @@ public class Moving : MonoBehaviour
         controller.Move(jumpVector);
         controller.Move(Quaternion.AngleAxis(transform.eulerAngles.y,Vector3.up)*moveVector);
     }
-
+    private void LateUpdate()
+    {
+        anim.SetBool("Jump", false);
+    }
     public void MoveForward()
     {
         transform.Translate(0f, -5, 0.5f);
