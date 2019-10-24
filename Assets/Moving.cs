@@ -45,8 +45,6 @@ public class Moving : MonoBehaviour
         {
             verticalVelocity -= gravity * Time.deltaTime;
         }
-        //transform.Translate(0f, verticalVelocity* Time.deltaTime,0f);
-        //transform.Translate(0f, 0f, 10 * Input.GetAxis("Vertical") * Time.deltaTime);
         jumpVector.y = verticalVelocity * Time.deltaTime;
         controller.Move(jumpVector);
         controller.Move(Quaternion.AngleAxis(transform.eulerAngles.y,Vector3.up)*moveVector);
