@@ -362,6 +362,18 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &944442111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944442098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ae100284311488ea01e36b58f6feab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &968338495
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,8 +953,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f231526acd6f40009622754b85264b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCamera: {fileID: 0}
-  battleCamera: {fileID: 0}
 --- !u!65 &2057740330
 BoxCollider:
   m_ObjectHideFlags: 0
