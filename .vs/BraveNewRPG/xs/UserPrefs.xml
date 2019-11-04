@@ -1,17 +1,18 @@
 ﻿<Properties StartupConfiguration="{9D8F0E6F-23DB-6A4D-870D-1073C74B0C5E}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/LoadGameTutorial.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/LoadLevel1.cs">
     <Files>
       <File FileName="Assets/Moving.cs" Line="48" Column="58" />
       <File FileName="Assets/TriggerBattle.cs" Line="4" Column="1" />
-      <File FileName="Assets/LoadGameTutorial.cs" Line="8" Column="17" />
+      <File FileName="Assets/LoadGameTutorial.cs" Line="10" Column="64" />
       <File FileName="Assets/HealthChange.cs" Line="1" Column="1" />
+      <File FileName="Assets/LoadLevel1.cs" Line="7" Column="21" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BraveNewRPG" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="LoadGameTutorial.cs" selected="True" />
+              <Node name="LoadLevel1.cs" selected="True" />
             </Node>
           </Node>
         </State>

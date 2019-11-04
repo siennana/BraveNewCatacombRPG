@@ -67,6 +67,7 @@
     <Compile Include="Assets\HealthBar.cs" />
     <Compile Include="Assets\HealthChange.cs" />
     <Compile Include="Assets\LoadGameTutorial.cs" />
+    <Compile Include="Assets\LoadLevel1.cs" />
     <Compile Include="Assets\MoveCamera.cs" />
     <Compile Include="Assets\Moving.cs" />
     <Compile Include="Assets\playerHealth.cs" />
