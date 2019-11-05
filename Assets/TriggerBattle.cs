@@ -18,8 +18,5 @@ public class TriggerBattle : MonoBehaviour
         Debug.Log("Oh you're approaching me!");
         SceneManager.LoadScene("Battle", LoadSceneMode.Single);
 
-        //Debug.Log("Scene2 loading: " + scenePaths[0]);
-        //SceneManager.LoadScene(scenePaths[0], LoadSceneMode.Single);
-
     }
 }

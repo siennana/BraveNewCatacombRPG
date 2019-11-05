@@ -17,6 +17,7 @@ public class Moving : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         //this.rotation = new Vector3(0, Input.GetAxisRaw("Horizontal") * 180 * Time.deltaTime, 0);
         anim = GetComponent<Animator>();
         controller = GetComponent<CharacterController>();
@@ -52,9 +53,5 @@ public class Moving : MonoBehaviour
     {
         anim.SetBool("Jump", false);
     }
-    public void MoveForward()
-    {
-        transform.Translate(0f, -5, 0.5f);
 
-    }
 }
