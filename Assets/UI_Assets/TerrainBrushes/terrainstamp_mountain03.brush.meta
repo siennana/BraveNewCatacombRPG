@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: f11a285f166a0f6499471bc2b3deaefb
+=======
 guid: 4936edada57a54874b3d0c4569a764d5
+>>>>>>> JohnTutorial
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 11400000
