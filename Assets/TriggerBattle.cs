@@ -9,6 +9,7 @@ public class TriggerBattle : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+
     
     }
 
