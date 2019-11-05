@@ -10,12 +10,15 @@ public class Moving : MonoBehaviour
     private Vector3 jumpVector;
     private float gravity = 14.0f;
     private float jumpForce = 10.0f;
+
     private Animator anim;
 
     public Vector3 rotation;
     // Start is called before the first frame update
     void Start()
     {
+
+        //this.rotation = new Vector3(0, Input.GetAxisRaw("Horizontal") * 180 * Time.deltaTime, 0);
         anim = GetComponent<Animator>();
         controller = GetComponent<CharacterController>();
     }
