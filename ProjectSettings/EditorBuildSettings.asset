@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TerrainPractice.unity
+    path: Assets/Scenes/AaronDialogue.unity
     guid: 7c2d2656d816a4e859a423424d5986a2
   m_configObjects: {}
