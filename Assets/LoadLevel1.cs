@@ -5,8 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class LoadLevel1 : MonoBehaviour
 {
-    public void LoadNextLevel()
+    public GameObject LevelOne;
+    public GameObject MinionBattle;
+    public GameObject BeeBattle;
+
+    public void LoadMinionBattle()
     {
-        SceneManager.LoadScene("Level 1", LoadSceneMode.Single);
+        LevelOne.SetActive(false);
+        MinionBattle.SetActive(true);
+    }
+
+    public void LoadBeeBattle()
+    {
+        LevelOne.SetActive(false);
+        BeeBattle.SetActive(true);
     }
 }

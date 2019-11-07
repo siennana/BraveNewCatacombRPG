@@ -526,7 +526,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Justin Alexis          Writer
+  m_text: Justin Alexis          Game Designer/Writer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a81a3ef2016f54ff884c0e3401eb20d9, type: 2}
   m_sharedMaterial: {fileID: -2954903076303972096, guid: a81a3ef2016f54ff884c0e3401eb20d9,
@@ -596,10 +596,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 226933424}
-    characterCount: 29
+    characterCount: 43
     spriteCount: 0
-    spaceCount: 11
-    wordCount: 3
+    spaceCount: 12
+    wordCount: 5
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -2676,7 +2676,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1907524962
 RectTransform:
   m_ObjectHideFlags: 0
