@@ -7,7 +7,7 @@ public class LevelLoader : MonoBehaviour
 {
     public void LoadNextLevel()
     {
-        SceneManager.LoadScene("Level 1", LoadSceneMode.Single);
+        SceneManager.LoadSceneAsync("Level 1", LoadSceneMode.Single);
     }
 
 }

@@ -350,8 +350,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f93ea29244d5046bcadd73bd89cbf451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelOne: {fileID: 307709241}
-  beeBattle: {fileID: 489493841}
+  Level1: {fileID: 0}
+  beeBattle: {fileID: 0}
 --- !u!114 &307709244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -364,8 +364,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd8096a595754355b3b677f85f624b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minionScene: {fileID: 2024697918}
-  LevelOne: {fileID: 307709241}
 --- !u!1 &328213086
 GameObject:
   m_ObjectHideFlags: 0
@@ -1451,8 +1449,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd8096a595754355b3b677f85f624b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minionScene: {fileID: 0}
-  LevelOne: {fileID: 0}
 --- !u!4 &1134155848 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 060edc77e79fb4af29408e7ca052abe6,

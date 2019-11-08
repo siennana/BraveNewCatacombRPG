@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MinionBattle : MonoBehaviour
 {
+    public GameObject minionScene;
+    public GameObject LevelOne;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +16,7 @@ public class MinionBattle : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Oh you're approaching me!");
+        LevelOne.SetActive(false);
+        minionScene.SetActive(true);
     }
 }
