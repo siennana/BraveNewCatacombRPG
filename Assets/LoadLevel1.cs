@@ -20,4 +20,11 @@ public class LoadLevel1 : MonoBehaviour
         LevelOne.SetActive(false);
         BeeBattle.SetActive(true);
     }
+
+    public void LoadLevelOne()
+    {
+        LevelOne.SetActive(true);
+        MinionBattle.SetActive(false);
+        BeeBattle.SetActive(false);
+    }
 }
