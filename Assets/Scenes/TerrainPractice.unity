@@ -560,12 +560,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 648396214}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f9a51efb38b94e4fa712f99a6fbade4, type: 3}
+  m_Script: {fileID: 11500000, guid: 373324ece55404204956ce34ce5549d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelOne: {fileID: 0}
-  MinionBattle: {fileID: 0}
-  BeeBattle: {fileID: 0}
 --- !u!4 &648396216
 Transform:
   m_ObjectHideFlags: 0
@@ -2850,8 +2847,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f231526acd6f40009622754b85264b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BattleObject: {fileID: 0}
-  Tutorial: {fileID: 0}
+  BattleObject: {fileID: 1153442838}
+  Tutorial: {fileID: 247840427}
 --- !u!65 &2057740330
 BoxCollider:
   m_ObjectHideFlags: 0
