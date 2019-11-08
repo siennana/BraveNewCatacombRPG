@@ -5,8 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class LoadGameTutorial : MonoBehaviour
 {
+    [SerializeField]
+    AudioSource btnAudio;
     public void LoadTutorial()
     {
-        SceneManager.LoadScene("TerrainPractice", LoadSceneMode.Single);
+        btnAudio.Play();
+        SceneManager.LoadSceneAsync("TerrainPractice", LoadSceneMode.Single);
     }
 }
