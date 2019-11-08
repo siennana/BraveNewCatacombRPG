@@ -5,18 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class TriggerBattle : MonoBehaviour
 {
-
-    // Use this for initialization
-    void Start()
-    {
-
-    
-    }
+    public GameObject BattleObject;
+    public GameObject Tutorial;
 
     private void OnTriggerEnter(Collider other)
     { 
         Debug.Log("Oh you're approaching me!");
-        SceneManager.LoadScene("Battle", LoadSceneMode.Single);
-
+       
+        Tutorial.SetActive(false);
+        BattleObject.SetActive(true);
     }
 }
