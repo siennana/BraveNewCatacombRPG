@@ -9,7 +9,7 @@ public class LoadGameTutorial : MonoBehaviour
     AudioSource btnAudio;
     public void LoadTutorial()
     {
-        btnAudio.Play();
-        SceneManager.LoadSceneAsync("TerrainPractice", LoadSceneMode.Single);
+        //btnAudio.Play();
+        _ = SceneManager.LoadSceneAsync("TerrainPractice", LoadSceneMode.Single);
     }
 }

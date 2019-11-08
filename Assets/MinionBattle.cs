@@ -14,6 +14,5 @@ public class MinionBattle : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Oh you're approaching me!");
-        SceneManager.LoadScene("BattleMinion", LoadSceneMode.Single);
     }
 }
