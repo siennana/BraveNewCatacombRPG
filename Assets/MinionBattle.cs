@@ -18,5 +18,6 @@ public class MinionBattle : MonoBehaviour
         Debug.Log("Oh you're approaching me!");
         LevelOne.SetActive(false);
         minionScene.SetActive(true);
+        this.gameObject.SetActive(false);
     }
 }

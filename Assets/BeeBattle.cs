@@ -19,5 +19,6 @@ public class BeeBattle : MonoBehaviour
         Debug.Log("Oh you're approaching me!");
         LevelOne.SetActive(false);
         beeBattle.SetActive(true);
+        this.gameObject.SetActive(false);
     }
 }

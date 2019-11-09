@@ -308,8 +308,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 307709242}
-  - component: {fileID: 307709244}
-  - component: {fileID: 307709243}
   m_Layer: 0
   m_Name: MainLevelOne
   m_TagString: Untagged
@@ -338,34 +336,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &307709243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 307709241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f93ea29244d5046bcadd73bd89cbf451, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LevelOne: {fileID: 307709241}
-  beeBattle: {fileID: 489493841}
---- !u!114 &307709244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 307709241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cd8096a595754355b3b677f85f624b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minionScene: {fileID: 2024697918}
-  LevelOne: {fileID: 307709241}
 --- !u!1 &328213086
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,9 +572,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f9a51efb38b94e4fa712f99a6fbade4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelOne: {fileID: 0}
-  MinionBattle: {fileID: 0}
-  BeeBattle: {fileID: 0}
+  LevelOne: {fileID: 307709241}
+  MinionBattle: {fileID: 2024697918}
+  BeeBattle: {fileID: 489493841}
 --- !u!4 &648396216
 Transform:
   m_ObjectHideFlags: 0
@@ -1451,8 +1421,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd8096a595754355b3b677f85f624b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minionScene: {fileID: 0}
-  LevelOne: {fileID: 0}
+  minionScene: {fileID: 2024697918}
+  LevelOne: {fileID: 307709241}
 --- !u!4 &1134155848 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 060edc77e79fb4af29408e7ca052abe6,
@@ -1811,7 +1781,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 648396215}
-        m_MethodName: LoadNextLevel
+        m_MethodName: LoadLevelOne
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2186,9 +2156,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f9a51efb38b94e4fa712f99a6fbade4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelOne: {fileID: 0}
-  MinionBattle: {fileID: 0}
-  BeeBattle: {fileID: 0}
+  LevelOne: {fileID: 307709241}
+  MinionBattle: {fileID: 2024697918}
+  BeeBattle: {fileID: 489493841}
 --- !u!1001 &1655099331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2266,6 +2236,11 @@ PrefabInstance:
       propertyPath: beeBattle
       value: 
       objectReference: {fileID: 489493841}
+    - target: {fileID: 373390272658311072, guid: 6199cf56420ae4bb5a336af17abb4e2e,
+        type: 3}
+      propertyPath: LevelOne
+      value: 
+      objectReference: {fileID: 307709241}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6199cf56420ae4bb5a336af17abb4e2e, type: 3}
 --- !u!1 &1660621232
@@ -2710,7 +2685,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1604591166}
-        m_MethodName: LoadNextLevel
+        m_MethodName: LoadLevelOne
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

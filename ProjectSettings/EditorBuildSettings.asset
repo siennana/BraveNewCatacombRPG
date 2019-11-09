@@ -12,15 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/TerrainPractice.unity
     guid: 7c2d2656d816a4e859a423424d5986a2
   - enabled: 1
-    path: Assets/Scenes/Battle.unity
-    guid: f2a9821c3bbb7434aa10beba15c7abeb
-  - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: 54cc53ec3d59d41c58810568077e47f8
-  - enabled: 1
-    path: Assets/Scenes/BattleMinion.unity
-    guid: 813f5cf7944a745e0abfc7123b0c6912
-  - enabled: 1
-    path: Assets/BattleBee.unity
-    guid: 275109ded5aef4ee8985dd4cd11b626e
   m_configObjects: {}

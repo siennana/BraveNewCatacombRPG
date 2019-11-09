@@ -31,7 +31,7 @@ public class LoadGameTutorial : MonoBehaviour
             float progress = Mathf.Clamp01(operation.progress / .9f);
 
             slider.value = progress;
-            progressText.text = progress * 100f + "%";
+            progressText.text = (progress * 100f).ToString("n2") + "%";
             Debug.Log(operation.progress);
 
             yield return null;
