@@ -23,15 +23,22 @@ public class BattleActions : MonoBehaviour
         attackPosition = (enemy.transform.position - startPosition);
         moveVector = new Vector3((attackPosition.x-1.9f)/25f, 0f,(attackPosition.z-1.9f)/25f);
         Debug.Log(startPosition);
+        Debug.Log(Screen.currentResolution);
 
     }
 
-    public void AttackAction()
+    public void SpinAttack()
     {
-        StartCoroutine(AttackCoroutine());
+        StartCoroutine(SpinCoroutine());
     }
 
-    IEnumerator AttackCoroutine()
+    public void DropAttack()
+    {
+        StartCoroutine(DropCoroutine());
+    }
+
+
+    IEnumerator SpinCoroutine()
     {
         anim.SetBool("Run", true);
         if (controller.isGrounded)
@@ -52,16 +59,39 @@ public class BattleActions : MonoBehaviour
         }
         anim.SetBool("Run", false);
         anim.SetTrigger("Spinkick");
-        //Debug.Log(this.transform.position);
-        //while (timePassed < 1) {
-        //    this.transform.Rotate(45/30f, 0, 0);
-        //    yield return new WaitForSeconds(0.5f / 30);
-        //    timePassed += Time.deltaTime;
-        //}
 
         yield return new WaitForSeconds(1);
 
         //this.transform.Rotate(-45, 0, 0);
+        this.transform.position = startPosition;
+    }
+
+    IEnumerator DropCoroutine()
+    {
+        anim.SetBool("Run", true);
+        if (controller.isGrounded)
+        {
+            verticalVelocity = 0;
+        }
+        else
+        {
+            verticalVelocity -= gravity * Time.deltaTime;
+        }
+        gravityVector.y = verticalVelocity * Time.deltaTime;
+        float timePassed = 0;
+        while (timePassed < 0.5f)
+        {
+            controller.Move(moveVector);
+            controller.Move(gravityVector);
+            yield return new WaitForSeconds(0.5f / 40);
+            timePassed += Time.deltaTime;
+        }
+        anim.SetBool("Run", false);
+        anim.SetTrigger("Dropkick");
+
+
+        yield return new WaitForSeconds(1);
+
         this.transform.position = startPosition;
     }
 }
