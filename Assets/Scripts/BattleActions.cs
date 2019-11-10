@@ -21,7 +21,7 @@ public class BattleActions : MonoBehaviour
         anim = GetComponent<Animator>();
         startPosition = this.transform.position;
         attackPosition = (enemy.transform.position - startPosition);
-        moveVector = new Vector3((attackPosition.x-2f)/25f, 0f,(attackPosition.z-2f)/25f);
+        moveVector = new Vector3((attackPosition.x-1.9f)/25f, 0f,(attackPosition.z-1.9f)/25f);
         Debug.Log(startPosition);
 
     }
