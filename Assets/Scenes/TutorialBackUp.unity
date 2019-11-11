@@ -2765,6 +2765,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BattleMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 8515346869276836656, guid: de38d80aa41ec4f4db762a5054c35a3b,
+        type: 3}
+      propertyPath: attackMenu
+      value: 
+      objectReference: {fileID: 50271942}
     - target: {fileID: 2133475061257537839, guid: de38d80aa41ec4f4db762a5054c35a3b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2893,11 +2898,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8515346869276836656, guid: de38d80aa41ec4f4db762a5054c35a3b,
-        type: 3}
-      propertyPath: attackMenu
-      value: 
-      objectReference: {fileID: 50271942}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de38d80aa41ec4f4db762a5054c35a3b, type: 3}
 --- !u!1001 &2118411853642863903
