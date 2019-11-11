@@ -1,1 +1,3 @@
 # BraveNewRPG
+
+Our VGDC game
