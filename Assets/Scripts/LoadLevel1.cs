@@ -8,6 +8,7 @@ public class LoadLevel1 : MonoBehaviour
     public GameObject LevelOne;
     public GameObject MinionBattle;
     public GameObject BeeBattle;
+    public GameObject BossBattle;
 
     public void LoadMinionBattle()
     {
@@ -26,5 +27,12 @@ public class LoadLevel1 : MonoBehaviour
         LevelOne.SetActive(true);
         MinionBattle.SetActive(false);
         BeeBattle.SetActive(false);
+        BossBattle.SetActive(false);
+    }
+
+    public void LoadBossBattle()
+    {
+        LevelOne.SetActive(false);
+        BossBattle.SetActive(true);
     }
 }
