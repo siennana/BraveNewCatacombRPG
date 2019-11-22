@@ -1,0 +1,611 @@
+[33mcommit 026dfcd2393a96a9c491377e665d26c1fa5dfe23[m[33m ([m[1;36mHEAD -> [m[1;32mSiennaBranch[m[33m, [m[1;31morigin/SiennaBranch[m[33m)[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Thu Nov 14 16:24:22 2019 -0800
+
+    moving and stuff
+
+[33mcommit 549003cfcf7566d79f55f962554944a0c36b3fb2[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Wed Nov 13 19:27:18 2019 -0800
+
+    accidentally removed terrain
+
+[33mcommit 8d4098368f3e99cee678c62b0221fc15051c32e8[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Tue Nov 12 16:07:14 2019 -0800
+
+    deleted duplicates
+
+[33mcommit 56cc5ffcfa2993f0cfc777133d59d89c2ee5023b[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Sun Nov 10 22:05:18 2019 -0800
+
+    just messing around
+
+[33mcommit 4256a27e01e08e5897a412b533689c09ddb1e476[m
+Merge: e079f83b a287f70a
+Author: John Yu <39107518+johnyu763@users.noreply.github.com>
+Date:   Sun Nov 10 19:02:55 2019 -0800
+
+    Merge pull request #11 from johnyu763/master
+    
+    master to john
+
+[33mcommit a287f70aab712a4b32de627417eb28b0119b00d8[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: 6ddc9178 d13ae86e
+Author: John Yu <39107518+johnyu763@users.noreply.github.com>
+Date:   Sun Nov 10 17:37:36 2019 -0800
+
+    Merge pull request #10 from johnyu763/aaron
+    
+    Aaron
+
+[33mcommit d13ae86e4222e125bc4b8a57b0c7eacc75da110a[m[33m ([m[1;31morigin/aaron[m[33m)[m
+Author: johnyu763 <johnyu763@gmail.com>
+Date:   Sun Nov 10 17:36:56 2019 -0800
+
+    Attached stuff
+
+[33mcommit 74db744b56812ca893790783046d514aa275194d[m
+Merge: 6aec345d e079f83b
+Author: John Yu <39107518+johnyu763@users.noreply.github.com>
+Date:   Sun Nov 10 17:29:49 2019 -0800
+
+    Merge pull request #9 from johnyu763/JohnTutorial
+    
+    John tutorial
+
+[33mcommit e079f83b65f484fee4c73ae34f04b67e549e1762[m
+Author: johnyu763 <johnyu763@gmail.com>
+Date:   Sun Nov 10 17:27:20 2019 -0800
+
+    updated README.md
+
+[33mcommit 6ddc9178e8e3e85c61919d1ec491f10ef5e6542a[m
+Merge: 76ffa819 fe4356de
+Author: John Yu <39107518+johnyu763@users.noreply.github.com>
+Date:   Sun Nov 10 17:18:24 2019 -0800
+
+    Merge pull request #8 from johnyu763/JohnTutorial
+    
+    John tutorial
+
+[33mcommit fe4356de021be84c4d87eeed3fed677048c6315a[m
+Author: johnyu763 <johnyu763@gmail.com>
+Date:   Sun Nov 10 17:16:57 2019 -0800
+
+    merge complete
+
+[33mcommit 88b46fc04311aff20c8385d2ed4d967fd8f1ff09[m
+Merge: 7df52e93 8851acb8
+Author: johnyu763 <johnyu763@gmail.com>
+Date:   Sun Nov 10 17:03:35 2019 -0800
+
+    Merge branch 'JohnTutorial' into AaronBranch2
+
+[33mcommit 7df52e93b297a3471f443bdb4c87107e754b13a8[m
+Author: johnyu763 <johnyu763@gmail.com>
+Date:   Sun Nov 10 17:03:30 2019 -0800
+
+    Removed stuff again
+
+[33mcommit 8851acb858d6fef526bef4d2a9498c99ea100cfe[m
+Author: johnyu763 <johnyu763@gmail.com>
+Date:   Sun Nov 10 16:46:06 2019 -0800
+
+    Remove Terrain
+
+[33mcommit de69f2661fb33d506c3b49a53487c365e43d153e[m
+Merge: 9ec81ce5 b69a4f71
+Author: johnyu763 <johnyu763@gmail.com>
+Date:   Sun Nov 10 16:41:44 2019 -0800
+
+    I think merge resolved
+
+[33mcommit b69a4f716bb8cca1583499a2f9b02a2973e15f0f[m
+Author: johnyu763 <johnyu763@gmail.com>
+Date:   Sun Nov 10 16:29:30 2019 -0800
+
+    removed stuff
+
+[33mcommit 76ffa81915b350b65aa7491c51eb45492ed9a81a[m
+Merge: d5466494 6ecded6d
+Author: John Yu <39107518+johnyu763@users.noreply.github.com>
+Date:   Sun Nov 10 16:24:44 2019 -0800
+
+    Merge pull request #7 from johnyu763/JohnTutorial
+    
+    removed builds
+
+[33mcommit 6ecded6d09b41e2359392e0bfb58a91cbb956527[m
+Author: johnyu763 <johnyu763@gmail.com>
+Date:   Sun Nov 10 16:19:31 2019 -0800
+
+    removed builds
+
+[33mcommit d54664949de6ad830512119ac797fea8cc728136[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Sun Nov 10 15:41:44 2019 -0800
+
+    backup files
+
+[33mcommit 1ea15ed2d1eb217a06d4fd7c8105c8b6629ff475[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Sun Nov 10 15:38:36 2019 -0800
+
+    Some stuff
+
+[33mcommit 6ed6ef740597e71da19c707fd29b4fced5663a9e[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Sun Nov 10 15:16:15 2019 -0800
+
+    Battle System
+
+[33mcommit 543c72177ef07621aa8194e37b1cc5fc9cfdc349[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Sun Nov 10 08:51:01 2019 -0800
+
+    Health Bars
+
+[33mcommit 23b33865213c3c3a01069df024df1eb5c6e3e34e[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Sat Nov 9 21:39:23 2019 -0800
+
+    New Villain
+
+[33mcommit 3223c66075c48b1e2d61030aad3a99158ee8c476[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Sat Nov 9 15:55:42 2019 -0800
+
+    New attack
+
+[33mcommit ae64b78b26bfca77dd99e7d2dea68973b7f66501[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Sat Nov 9 10:15:15 2019 -0800
+
+    Battle
+
+[33mcommit 9cfe9dc40980e4e7be6f9d69eb069faf8999525e[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Sat Nov 9 08:32:21 2019 -0800
+
+    Basic attack
+
+[33mcommit 499b5a8b72d6c0c69891d2844ad4894e731bfda7[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Thu Nov 7 22:25:50 2019 -0800
+
+    Added Load Bar
+
+[33mcommit 9ec81ce5e84e8c1aaf14848a81f82280ec4db490[m
+Author: AaronShah2 <47093449+AaronShah2@users.noreply.github.com>
+Date:   Thu Nov 7 17:09:36 2019 -0800
+
+    stats
+
+[33mcommit 5518404687bed7e373ef72a67df55cf41a65008c[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Thu Nov 7 17:08:20 2019 -0800
+
+    Added some scene compression
+
+[33mcommit c99d0690936f33bc2baa968804ec958ebc65cb22[m
+Merge: 25d3c6cd 6a1a4fa9
+Author: johnyu763 <johny11@uci.edu>
+Date:   Thu Nov 7 16:51:11 2019 -0800
+
+    fixed some more issues
+
+[33mcommit 6a1a4fa91ecfdede5500b60aa9594966eebdf0ce[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Thu Nov 7 16:48:24 2019 -0800
+
+    Moved some stuff
+
+[33mcommit 25d3c6cd0ad6be9f133af8fd601f4f175557e146[m
+Merge: 5c90b8c9 83e32101
+Author: johnyu763 <johny11@uci.edu>
+Date:   Thu Nov 7 16:47:28 2019 -0800
+
+    fixed some issues
+
+[33mcommit 83e321016b4f8d793506c52d34f948d47ae90605[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Thu Nov 7 16:35:06 2019 -0800
+
+    moved scene
+
+[33mcommit 5c90b8c954f958603edd6862aa0360af5def86db[m
+Merge: 54c059f8 39e47eda
+Author: johnyu763 <johny11@uci.edu>
+Date:   Thu Nov 7 16:33:02 2019 -0800
+
+    fixed some conflicts
+
+[33mcommit 54c059f8b8949388d2b2075c0eb9022a3effe3a6[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Thu Nov 7 16:27:59 2019 -0800
+
+    Remove aaron menu
+
+[33mcommit 39e47eda23c81034ba3ab1830885f6e7deb46408[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Thu Nov 7 16:27:17 2019 -0800
+
+    removed stuff
+
+[33mcommit 9427ee7e9e7f5ba2b00e37fcba32d3d3f76e57f2[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Thu Nov 7 16:25:35 2019 -0800
+
+    Remove start menu
+
+[33mcommit 69f86b079702c70106ec4d0c22741a7830260482[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Thu Nov 7 16:16:49 2019 -0800
+
+    Some more efficient use of space
+
+[33mcommit b8bf18a226222cca72e47fd1b1f67a355201569f[m
+Author: AaronShah2 <47093449+AaronShah2@users.noreply.github.com>
+Date:   Thu Nov 7 16:11:55 2019 -0800
+
+    some basic UI features
+
+[33mcommit 95f1d891f57756695bc1c0fcf53167f43a58fbae[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Thu Nov 7 15:42:29 2019 -0800
+
+    More efficient use of space
+
+[33mcommit 631c8526db6e2572011f612758aed4bcea804884[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Wed Nov 6 09:54:37 2019 -0800
+
+    combined tutorial and battle scene
+
+[33mcommit d06fb75bef17043faff304c47386a47be2172a9c[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Wed Nov 6 09:43:14 2019 -0800
+
+    added credits
+
+[33mcommit f044a169206e5125ea842a7adf183687a258fbb0[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Wed Nov 6 09:42:34 2019 -0800
+
+    Credit screen
+
+[33mcommit 7af8f21e9a23c113f38fb02583b8871d2d5459f1[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Tue Nov 5 19:39:05 2019 -0800
+
+    adjust menu size again
+
+[33mcommit d23c2afdddc97f703839ee913ccab8f2f1bd665a[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Tue Nov 5 15:54:08 2019 -0800
+
+    Added some texture to scenes
+
+[33mcommit 7c84a9c9216a0ab8b7fee2a3a8882af3f0ab48ab[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Tue Nov 5 15:47:06 2019 -0800
+
+    removed duplicates
+
+[33mcommit 9b9cc22e1a5aa25afefb8ac98ed908925c85a19e[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Tue Nov 5 15:45:37 2019 -0800
+
+    factory settings
+
+[33mcommit 69d558c0257b2db89a48404be30ecb3c367f07d4[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Tue Nov 5 15:44:10 2019 -0800
+
+    different battle scenes
+
+[33mcommit d11fdddb61d92505bb09fc36dc138675391c75bf[m
+Merge: 4fcbb36d 7db43a2f
+Author: johnyu763 <johny11@uci.edu>
+Date:   Tue Nov 5 11:38:54 2019 -0800
+
+    I dislike merge conflicts
+
+[33mcommit 7db43a2f4b08213a60f1e48deb45d3b451ae6ee1[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Tue Nov 5 10:28:02 2019 -0800
+
+    merged aaron into this
+
+[33mcommit 4e9dc955bb7be0d6ce01d549e7979d529a8f2a5d[m
+Merge: e19fd7fa 6aec345d
+Author: johnyu763 <johny11@uci.edu>
+Date:   Tue Nov 5 10:26:24 2019 -0800
+
+    Merge branch 'aaron' into JohnTutorial
+
+[33mcommit 6aec345d7e44ef28c9bb7934b846c3794b920ebc[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Tue Nov 5 10:25:55 2019 -0800
+
+    merge conflicts again
+
+[33mcommit e19fd7fa9302267309d17f8d468406de41262fe9[m
+Merge: cfdff8af 10fd78af
+Author: John Yu <39107518+johnyu763@users.noreply.github.com>
+Date:   Mon Nov 4 21:30:30 2019 -0800
+
+    Merge pull request #4 from johnyu763/aaron
+    
+    Aaron
+
+[33mcommit 10fd78af7e180b0c4c2a8d21c3c8d10b96210b77[m
+Merge: 0a368dc9 cfdff8af
+Author: johnyu763 <johny11@uci.edu>
+Date:   Mon Nov 4 21:30:04 2019 -0800
+
+    merge conflicts resolved
+
+[33mcommit 0a368dc95d1a40e2b10b3a898265529ea4fcc891[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Mon Nov 4 21:09:27 2019 -0800
+
+    deleted some things
+
+[33mcommit cfdff8af51c1c06ad5be56d3ef02ea082b9c5846[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Mon Nov 4 20:56:59 2019 -0800
+
+    menu full screen
+
+[33mcommit 87195d7aaa011d17cdbac58ad46b7e2a9c2cc435[m
+Author: johnyu763 <johnyu763@gmail.com>
+Date:   Mon Nov 4 18:27:12 2019 -0800
+
+    .gitignore fix
+
+[33mcommit 37e79bb29e5a03808586dc2f86aa909e8282064f[m
+Author: johnyu763 <johnyu763@gmail.com>
+Date:   Mon Nov 4 18:26:01 2019 -0800
+
+    .gitignore fix
+
+[33mcommit 4fcbb36dcc860f425a11bea3f560147282c99823[m
+Author: johnyu763 <johnyu763@gmail.com>
+Date:   Mon Nov 4 18:24:33 2019 -0800
+
+    .gitignore fix
+
+[33mcommit b277945003b2f755f618bd7eae9bb131f16b8a43[m
+Merge: 02aea1c3 611a8891
+Author: John Yu <39107518+johnyu763@users.noreply.github.com>
+Date:   Mon Nov 4 18:16:03 2019 -0800
+
+    Merge pull request #6 from johnyu763/JohnTutorial
+    
+    John tutorial
+
+[33mcommit 611a8891d0109dae9a59d2f10dc91eab71294299[m
+Author: John Yu <39107518+johnyu763@users.noreply.github.com>
+Date:   Mon Nov 4 17:46:12 2019 -0800
+
+    Delete Assembly-CSharp.csproj
+
+[33mcommit 400ba8a85d6be022810f1825032fb75056da9070[m
+Author: John Yu <39107518+johnyu763@users.noreply.github.com>
+Date:   Mon Nov 4 17:46:05 2019 -0800
+
+    Delete Assembly-CSharp-Editor.csproj
+
+[33mcommit 6a3d5568b71fde0d0f34638b31394a21815fa64d[m
+Author: johnyu763 <johnyu763@gmail.com>
+Date:   Mon Nov 4 17:39:34 2019 -0800
+
+    remove duplicates
+
+[33mcommit 0f60e0e42371851e9bf298bd53fca2a5e4add38c[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Mon Nov 4 16:17:30 2019 -0800
+
+    I don't even know
+
+[33mcommit 9193e362896adc74863fc0a5e1e7664f2285c610[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Mon Nov 4 16:01:34 2019 -0800
+
+    Got dialogue assets
+
+[33mcommit 02aea1c36d82207870e95541ab94018880f3769d[m
+Merge: 3b1b478d 623d4492
+Author: John Yu <39107518+johnyu763@users.noreply.github.com>
+Date:   Mon Nov 4 15:38:36 2019 -0800
+
+    Merge pull request #5 from johnyu763/JohnTutorial
+    
+    John tutorial
+
+[33mcommit 623d44922c323a2936d017d703c277441fd431b6[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Mon Nov 4 15:37:32 2019 -0800
+
+    Changed Menu size
+
+[33mcommit 557db9d698d6b080242d44364cfba79286811f31[m
+Author: John Yu <39107518+johnyu763@users.noreply.github.com>
+Date:   Mon Nov 4 15:11:53 2019 -0800
+
+    Create .gitignore
+
+[33mcommit 51cd19bfa57a7e4bb004ad4a86877cdbc8ce7866[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Mon Nov 4 14:42:21 2019 -0800
+
+    Basic Battle
+
+[33mcommit c49cef1c84af0855ff7153009ee78a75e8b02f4b[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Mon Nov 4 14:36:26 2019 -0800
+
+    menu screen
+
+[33mcommit 015d41cfd35ce70ffc4b2366aaef590fcaf0f0e9[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Mon Nov 4 13:45:45 2019 -0800
+
+    Level 1
+
+[33mcommit f58afaf1f28ce8eb7d71239af148b0bd70f4b8be[m
+Author: AaronShah2 <47093449+AaronShah2@users.noreply.github.com>
+Date:   Thu Oct 31 16:51:53 2019 -0700
+
+    dialogue
+
+[33mcommit 21b83811744c4d324aea5ea57a795189de9692c6[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Tue Oct 29 17:18:00 2019 -0700
+
+    Unload Terrain when entering battle
+
+[33mcommit c6c530b9475620cec7eb79b499c275d5968cc281[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Tue Oct 29 16:41:47 2019 -0700
+
+    Something changed
+
+[33mcommit 2196755c68dd17e892e64e0ed4dcdcc99fe45f10[m
+Author: John Yu <39107518+johnyu763@users.noreply.github.com>
+Date:   Tue Oct 29 16:29:38 2019 -0700
+
+    Create .gitignore
+
+[33mcommit 3b1b478de5e51d83ba4f3b76e78595742788a7a4[m
+Author: John Yu <39107518+johnyu763@users.noreply.github.com>
+Date:   Tue Oct 29 16:28:07 2019 -0700
+
+    Create .gitignore
+
+[33mcommit 49697f8937df507569f59ee1a72a6b5be8804d7b[m
+Merge: ac9eba12 c3a26e50
+Author: johnyu763 <johny11@uci.edu>
+Date:   Tue Oct 29 16:25:41 2019 -0700
+
+    Battle
+
+[33mcommit c3a26e507306e80bc1522d8d08da1f03249116e5[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Tue Oct 29 16:14:30 2019 -0700
+
+    Battle Scene
+
+[33mcommit ac9eba121aaa386634359c6037e202c62c4873c6[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Fri Oct 25 13:18:15 2019 -0700
+
+    stash changes
+
+[33mcommit 9e0760522be495dc9568c7d412cd3379ab128354[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Thu Oct 24 16:13:29 2019 -0700
+
+    working state
+
+[33mcommit af6ec1a21b10fda976d0ccb08f15f2fc0ed960fa[m
+Merge: 68c9a4ac ffa31543
+Author: John Yu <39107518+johnyu763@users.noreply.github.com>
+Date:   Wed Oct 23 19:38:00 2019 -0700
+
+    Merge pull request #3 from johnyu763/JohnTutorial
+    
+    John tutorial
+
+[33mcommit ffa31543ae3006e0df6f9f8f4a745cead15afe6d[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Wed Oct 23 19:30:58 2019 -0700
+
+    jumping still buggy
+
+[33mcommit 12abb348d26dd8d2b3e67585067ee20b8345ad4b[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Wed Oct 23 19:25:50 2019 -0700
+
+    messed with jumping
+
+[33mcommit df54ad54bd9ff63fd49d082bea29e847ea09b926[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Wed Oct 23 19:06:55 2019 -0700
+
+    fixed jumping
+
+[33mcommit 9cb546f5afb9a9c7eab625536492decc3c039f26[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Wed Oct 23 18:31:35 2019 -0700
+
+    Added jumping
+
+[33mcommit 68c9a4ac46972771f6cfb59086cb43a78a94c3b4[m
+Merge: 2067eba2 ab0a2955
+Author: John Yu <39107518+johnyu763@users.noreply.github.com>
+Date:   Tue Oct 22 19:34:55 2019 -0700
+
+    Merge pull request #2 from johnyu763/JohnTutorial
+    
+    John tutorial
+
+[33mcommit ab0a2955d0c6e498f90e6c2c7f7f69e670ab7fc3[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Tue Oct 22 19:34:12 2019 -0700
+
+    Unity Chan Walk Animation
+
+[33mcommit aa2e081a81eae169e6ce8f1d96a3b1ee32455263[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Tue Oct 22 18:58:06 2019 -0700
+
+    added unity-chan
+
+[33mcommit 2067eba2695422afb82ea30d27fb448e03af682f[m
+Merge: 5abc8455 0fb8ad6f
+Author: John Yu <39107518+johnyu763@users.noreply.github.com>
+Date:   Tue Oct 22 18:48:03 2019 -0700
+
+    Merge pull request #1 from johnyu763/JohnTutorial
+    
+    John tutorial
+
+[33mcommit 0fb8ad6fa4244b3808c1f4fb452b61940c3afa04[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Tue Oct 22 18:47:23 2019 -0700
+
+    rotation fixed
+
+[33mcommit 014b808494ea920a8d65f618fe984c8f49dc3881[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Tue Oct 22 16:40:38 2019 -0700
+
+    Some rotation added
+
+[33mcommit f0cd66a0138afe438f5a97668e4c07ea6a9712d3[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Tue Oct 22 16:06:03 2019 -0700
+
+    Basic 3D Experiment
+
+[33mcommit a6ad9fbb4cc883e27a654e7d90dfc61fbf20491a[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Fri Oct 18 23:11:40 2019 -0700
+
+    Terrain collision
+
+[33mcommit 1e7b993bf64c4828297f86f05900d147dec58d59[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Thu Oct 17 18:18:55 2019 -0700
+
+    Wild west assets
+
+[33mcommit 5abc84550aeed2b978ef6dd541ae89d2027cb696[m
+Author: johnyu763 <johny11@uci.edu>
+Date:   Wed Oct 16 21:21:41 2019 -0700
+
+    first commit

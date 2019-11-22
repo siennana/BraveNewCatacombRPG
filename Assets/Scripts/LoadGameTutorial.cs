@@ -12,6 +12,8 @@ public class LoadGameTutorial : MonoBehaviour
     public Slider slider;
     public Text progressText;
     public GameObject MainMenu;
+
+    //initiates loading screen and main menu
     public void LoadTutorial()
     {
         //btnAudio.Play();
