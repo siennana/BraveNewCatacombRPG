@@ -26,7 +26,7 @@ public class LoadGameTutorial : MonoBehaviour
     private IEnumerator LoadAsynchronously()
     {
 
-        AsyncOperation operation = SceneManager.LoadSceneAsync("TerrainPractice", LoadSceneMode.Single);
+        AsyncOperation operation = SceneManager.LoadSceneAsync("GameTutorial", LoadSceneMode.Single);
 
         while (!operation.isDone)
         {
