@@ -1,15 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
+using System.Collections;
 
-public class TriggerBattle : MonoBehaviour
+public class LevelOneBossTrigger : MonoBehaviour
 {
     public GameObject BattleObject;
-    public GameObject Tutorial;
+    public GameObject MainLevel;
     public GameObject player;
     private Vector3 movePlace;
     private Animator anim;
+    public float speed;
     public float desireDist = 0;
     private float dist;
     private bool played;
@@ -26,12 +25,13 @@ public class TriggerBattle : MonoBehaviour
     private void Update()
     {
         dist = Vector3.Distance(this.transform.position, player.transform.position);
-        if (dist <= 100 && dist > desireDist) {
+        if (dist <= 100 && dist > desireDist)
+        {
             anim.SetFloat("Speed", 1);
             this.transform.LookAt(player.transform);
-            this.transform.position = Vector3.MoveTowards(this.transform.position, player.transform.position, 0.5f);
+            this.transform.position = Vector3.MoveTowards(this.transform.position, player.transform.position, speed);
         }
-        else if(dist <= desireDist && !played)
+        else if (dist <= desireDist && !played)
         {
             played = true;
             StartCoroutine(VillainAttack());
@@ -42,8 +42,7 @@ public class TriggerBattle : MonoBehaviour
     {
         anim.SetTrigger("Sword");
         yield return new WaitForSeconds(1f);
-        Tutorial.SetActive(false);
+        MainLevel.SetActive(false);
         BattleObject.SetActive(true);
     }
-
 }
