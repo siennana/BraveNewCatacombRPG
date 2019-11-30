@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GethinBattle : MonoBehaviour
 {
+    public getDamage endGame;
     private Animator anim;
     public GameObject menuItems;
     public GameObject attackItems;
@@ -27,6 +28,6 @@ public class GethinBattle : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         anim.Play("SwordAttack");
         yield return new WaitForSeconds(1.7f);
-        menuItems.SetActive(true);
+        endGame.RunToBe();
     }
 }

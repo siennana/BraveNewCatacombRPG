@@ -1037,7 +1037,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 199fc161ff5c645ca91fa4a73049e873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 702992101}
+  mainScreen: {fileID: 558490439}
+  Health: {fileID: 702992101}
   battle: {fileID: 1153442838}
   LoadingScreen: {fileID: 857903842}
   progressSlider: {fileID: 216750788}

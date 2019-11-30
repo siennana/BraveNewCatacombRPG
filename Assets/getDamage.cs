@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class getDamage : MonoBehaviour
 {
-    public Slider playerHealth;
+    public GameObject mainScreen;
+    public Slider Health;
     public GameObject battle;
     public GameObject LoadingScreen;
     public Slider progressSlider;
@@ -15,17 +16,39 @@ public class getDamage : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     public void RunProcess()
     {
         StartCoroutine(LoadAsynchronously());
     }
+    public void RunToBe()
+    {
+        StartCoroutine(ToBeCont());
+    }
+    public void RunWin()
+    {
+        StartCoroutine(WinRoutine());
+    }
 
+    private IEnumerator WinRoutine()
+    {
+        Health.value = 0f;
+        yield return new WaitForSeconds(1);
+        battle.SetActive(false);
+        mainScreen.SetActive(true);
+    }
+    private IEnumerator ToBeCont()
+    {
+        Health.value = 0f;
+        yield return new WaitForSeconds(1);
+        battle.SetActive(false);
+        LoadingScreen.SetActive(true);
+    }
     private IEnumerator LoadAsynchronously()
     {
-        playerHealth.value = 0f;
+        Health.value = 0f;
         yield return new WaitForSeconds(1);
         AsyncOperation operation = SceneManager.LoadSceneAsync("Level 1", LoadSceneMode.Single);
         battle.SetActive(false);
