@@ -12,6 +12,8 @@ public class LoadGameTutorial : MonoBehaviour
     public Slider slider;
     public Text progressText;
     public GameObject MainMenu;
+
+    //initiates loading screen and main menu
     public void LoadTutorial()
     {
         //btnAudio.Play();
@@ -24,7 +26,7 @@ public class LoadGameTutorial : MonoBehaviour
     private IEnumerator LoadAsynchronously()
     {
 
-        AsyncOperation operation = SceneManager.LoadSceneAsync("TerrainPractice", LoadSceneMode.Single);
+        AsyncOperation operation = SceneManager.LoadSceneAsync("GameTutorial", LoadSceneMode.Single);
 
         while (!operation.isDone)
         {
@@ -32,7 +34,6 @@ public class LoadGameTutorial : MonoBehaviour
 
             slider.value = progress;
             progressText.text = (progress * 100f).ToString("n2") + "%";
-            Debug.Log(operation.progress);
 
             yield return null;
         }
