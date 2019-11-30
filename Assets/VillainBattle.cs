@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class VillainBattle : MonoBehaviour
 {
+    public getDamage loserLoad;
     private Animator anim;
     public GameObject menuItems;
     public GameObject attackItems;
@@ -25,7 +26,7 @@ public class VillainBattle : MonoBehaviour
     {
         yield return new WaitForSeconds(0.8f);
         anim.SetTrigger("Attack");
-        yield return new WaitForSeconds(2.7f);
-        menuItems.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        loserLoad.RunProcess();
     }
 }
