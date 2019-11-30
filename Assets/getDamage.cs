@@ -35,14 +35,14 @@ public class getDamage : MonoBehaviour
     private IEnumerator WinRoutine()
     {
         Health.value = 0f;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2.5f);
         battle.SetActive(false);
         mainScreen.SetActive(true);
     }
     private IEnumerator ToBeCont()
     {
         Health.value = 0f;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1f);
         battle.SetActive(false);
         LoadingScreen.SetActive(true);
     }

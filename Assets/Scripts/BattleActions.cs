@@ -22,8 +22,6 @@ public class BattleActions : MonoBehaviour
         startPosition = this.transform.position;
         attackPosition = (enemy.transform.position - startPosition);
         moveVector = new Vector3((attackPosition.x-1.9f)/25f, 0f,(attackPosition.z-1.9f)/25f);
-        Debug.Log(startPosition);
-        Debug.Log(Screen.currentResolution);
 
     }
 
@@ -62,7 +60,6 @@ public class BattleActions : MonoBehaviour
 
         yield return new WaitForSeconds(1);
 
-        //this.transform.Rotate(-45, 0, 0);
         this.transform.position = startPosition;
     }
 

@@ -9,6 +9,7 @@ public class EnemyMove : MonoBehaviour
     private Vector3 playerPos;
     private Vector3 moveDir;
     private float dist;
+    public float speed;
     //Start is called before the first frame update
     private void Update()
     {
@@ -16,7 +17,7 @@ public class EnemyMove : MonoBehaviour
         if (dist <= 200)
         {
             enemy.transform.LookAt(player.transform);
-            enemy.transform.position = Vector3.MoveTowards(enemy.transform.position, player.transform.position, 0.7f);
+            enemy.transform.position = Vector3.MoveTowards(enemy.transform.position, player.transform.position, speed);
         }
     }
 
