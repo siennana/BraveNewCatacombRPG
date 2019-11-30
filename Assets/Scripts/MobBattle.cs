@@ -2,22 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class MinionBattle : MonoBehaviour
+public class MobBattle : MonoBehaviour
 {
-    public GameObject minionScene;
+    public Slider Health;
     public GameObject LevelOne;
+    public GameObject Battle;
+    public GameObject menuItems;
+    public GameObject attackItems;
     // Start is called before the first frame update
     void Start()
     {
         
     }
 
+    // Update is called once per frame
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Oh you're approaching me!");
         LevelOne.SetActive(false);
-        minionScene.SetActive(true);
+        Battle.SetActive(true);
         this.gameObject.SetActive(false);
+        Health.value = 1f;
+        attackItems.SetActive(false);
+        menuItems.SetActive(true);
     }
+
 }

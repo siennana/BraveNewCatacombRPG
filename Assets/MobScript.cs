@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class beeScript : MonoBehaviour
+public class MobScript : MonoBehaviour
 {
     public getDamage lose;
     public GameObject player;
