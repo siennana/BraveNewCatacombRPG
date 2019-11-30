@@ -11,6 +11,7 @@ public class MobBattle : MonoBehaviour
     public GameObject Battle;
     public GameObject menuItems;
     public GameObject attackItems;
+    public AudioSource song;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,7 @@ public class MobBattle : MonoBehaviour
         Health.value = 1f;
         attackItems.SetActive(false);
         menuItems.SetActive(true);
+        song.mute = true;
     }
 
 }

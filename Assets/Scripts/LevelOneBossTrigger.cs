@@ -13,6 +13,7 @@ public class LevelOneBossTrigger : MonoBehaviour
     private float dist;
     private bool played;
     private AnimatorStateInfo attackState;
+    public AudioSource song;
 
     public float DesireDist { get => desireDist; set => desireDist = value; }
 
@@ -35,6 +36,7 @@ public class LevelOneBossTrigger : MonoBehaviour
         {
             played = true;
             StartCoroutine(VillainAttack());
+            song.mute = true;
         }
     }
 
