@@ -8,10 +8,12 @@ public class UIDisplay : MonoBehaviour
     //Canvas Element
     [SerializeField]
     private CanvasGroup canvas;
+    private Animator anim;
 
     // hides UI element
     void Start()
     {
+        anim = GetComponent<Animator>();
         hide();
     }
     void hide()
@@ -25,5 +27,15 @@ public class UIDisplay : MonoBehaviour
     {
         canvas.alpha = 1f;
         canvas.interactable = true;
+    }
+
+    public void dialogueOption1()
+    {
+        anim.SetTrigger("option1");
+    }
+
+    public void dialogueOption2()
+    {
+        anim.SetTrigger("option2");
     }
 }

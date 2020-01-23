@@ -29,14 +29,17 @@ public class TutorialBossTrigger : MonoBehaviour
         dist = Vector3.Distance(this.transform.position, player.transform.position);
         if (dist <= desireDist && !played)
         {
-            played = true;
+            //played = true;
+            anim.SetFloat("Speed", 0f);
             //StartCoroutine(VillainAttack());
         }
+ 
         else if (dist <= 100 && dist > desireDist) {
             anim.SetFloat("Speed", 1);
             this.transform.LookAt(player.transform);
             this.transform.position = Vector3.MoveTowards(this.transform.position, player.transform.position, speed);
         }
+
     }
 
     IEnumerator VillainAttack()

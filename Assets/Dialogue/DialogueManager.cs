@@ -15,6 +15,7 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         sentences = new Queue<string>();
+        animator = GetComponent<Animator>();
     }
     public void StartDialogue(Dialogue dialogue)
     {
@@ -50,5 +51,17 @@ public class DialogueManager : MonoBehaviour
     {
         animator.SetBool("IsOpen", false);
         Debug.Log("End of conversations.");
+    }
+    public void nextDialogue()
+    {
+        animator.SetTrigger("Next");
+    }
+    public void OptionOneDialogue()
+    {
+        animator.SetTrigger("Option1");
+    }
+    public void OptionTwoDialogue()
+    {
+        animator.SetTrigger("Option2");
     }
 }
