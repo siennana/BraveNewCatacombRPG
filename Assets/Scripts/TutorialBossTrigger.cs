@@ -27,11 +27,10 @@ public class TutorialBossTrigger : MonoBehaviour
     private void Update()
     {
         dist = Vector3.Distance(this.transform.position, player.transform.position);
-        if (dist <= desireDist && !played)
+        if (dist <= desireDist)
         {
-            //played = true;
             anim.SetFloat("Speed", 0f);
-            //StartCoroutine(VillainAttack());
+
         }
  
         else if (dist <= 100 && dist > desireDist) {
@@ -42,10 +41,15 @@ public class TutorialBossTrigger : MonoBehaviour
 
     }
 
+    public void startBattle()
+    {
+        StartCoroutine(VillainAttack());
+    }
+
     IEnumerator VillainAttack()
     {
         anim.SetTrigger("Attack");
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(3f);
         MainLevel.SetActive(false);
         BattleObject.SetActive(true);
     }
