@@ -13,7 +13,7 @@ public class TutorialBossTrigger : MonoBehaviour
     public float speed;
     public float desireDist = 0;
     private float dist;
-    private bool played;
+    public float range = 1;
     private AnimatorStateInfo attackState;
 
     public float DesireDist { get => desireDist; set => desireDist = value; }
@@ -33,7 +33,7 @@ public class TutorialBossTrigger : MonoBehaviour
 
         }
  
-        else if (dist <= 100 && dist > desireDist) {
+        else if (dist <= range && dist > desireDist) {
             anim.SetFloat("Speed", 1);
             this.transform.LookAt(player.transform);
             this.transform.position = Vector3.MoveTowards(this.transform.position, player.transform.position, speed);

@@ -1041,7 +1041,6 @@ Transform:
   - {fileID: 1733242988}
   - {fileID: 1802065987}
   - {fileID: 1605425724}
-  - {fileID: 1058771929}
   - {fileID: 1489876086}
   - {fileID: 1704212038}
   m_Father: {fileID: 0}
@@ -2241,52 +2240,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 558490440}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1058771927
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1058771929}
-  - component: {fileID: 1058771928}
-  m_Layer: 0
-  m_Name: DialogueManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1058771928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1058771927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c474a53b3a9144a4ea0e436030f17485, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 1167170029}
-  dialogueText: {fileID: 1773953009}
-  animator: {fileID: 1452469019}
---- !u!4 &1058771929
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1058771927}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 163.99261, y: -132.79593, z: -23.009163}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 558490440}
-  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1101854519
 GameObject:
@@ -9061,7 +9014,7 @@ PrefabInstance:
     - target: {fileID: 9063333210892768267, guid: 5c92a81b077ae43418b99f19af31b853,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9063333210892768267, guid: 5c92a81b077ae43418b99f19af31b853,
         type: 3}
@@ -9134,8 +9087,9 @@ MonoBehaviour:
   BattleObject: {fileID: 1153442838}
   MainLevel: {fileID: 558490439}
   player: {fileID: 1489876075}
-  speed: 0.3
+  speed: 0.2
   desireDist: 3
+  range: 20
 --- !u!1001 &3354986161542341015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13009,7 +12963,7 @@ PrefabInstance:
     - target: {fileID: 7489131335020132108, guid: cdece423564de4460a502a826b9286ea,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7489131335020132108, guid: cdece423564de4460a502a826b9286ea,
         type: 3}
