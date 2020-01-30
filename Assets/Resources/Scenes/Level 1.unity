@@ -663,7 +663,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &307709242
 Transform:
   m_ObjectHideFlags: 0
@@ -1630,7 +1630,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &489493842
 Transform:
   m_ObjectHideFlags: 0
@@ -3019,11 +3019,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8515346869276836656, guid: de38d80aa41ec4f4db762a5054c35a3b,
-        type: 3}
-      propertyPath: attackMenu
-      value: 
-      objectReference: {fileID: 1261304114}
     - target: {fileID: 2133475061257537839, guid: de38d80aa41ec4f4db762a5054c35a3b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3129,13 +3124,18 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8515346869276836656, guid: de38d80aa41ec4f4db762a5054c35a3b,
+        type: 3}
+      propertyPath: attackMenu
+      value: 
+      objectReference: {fileID: 1261304114}
     - target: {fileID: 267442708, guid: de38d80aa41ec4f4db762a5054c35a3b, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 267442708, guid: de38d80aa41ec4f4db762a5054c35a3b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8130323903876549619, guid: de38d80aa41ec4f4db762a5054c35a3b,
         type: 3}
@@ -3150,12 +3150,12 @@ PrefabInstance:
     - target: {fileID: 1953646542671153929, guid: de38d80aa41ec4f4db762a5054c35a3b,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1953646542671153929, guid: de38d80aa41ec4f4db762a5054c35a3b,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7867834671265513772, guid: de38d80aa41ec4f4db762a5054c35a3b,
         type: 3}
@@ -3321,6 +3321,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GethinBattle
       objectReference: {fileID: 0}
+    - target: {fileID: 1271971825, guid: b02c72ea5d0a34a5eb6dbd897d034c93, type: 3}
+      propertyPath: menuItems
+      value: 
+      objectReference: {fileID: 1447888915}
+    - target: {fileID: 1271971825, guid: b02c72ea5d0a34a5eb6dbd897d034c93, type: 3}
+      propertyPath: attackItems
+      value: 
+      objectReference: {fileID: 1605339330}
+    - target: {fileID: 1271971825, guid: b02c72ea5d0a34a5eb6dbd897d034c93, type: 3}
+      propertyPath: endGame
+      value: 
+      objectReference: {fileID: 4232442541799582537}
     - target: {fileID: 1209450007174473788, guid: b02c72ea5d0a34a5eb6dbd897d034c93,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3376,18 +3388,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1271971825, guid: b02c72ea5d0a34a5eb6dbd897d034c93, type: 3}
-      propertyPath: menuItems
-      value: 
-      objectReference: {fileID: 1447888915}
-    - target: {fileID: 1271971825, guid: b02c72ea5d0a34a5eb6dbd897d034c93, type: 3}
-      propertyPath: attackItems
-      value: 
-      objectReference: {fileID: 1605339330}
-    - target: {fileID: 1271971825, guid: b02c72ea5d0a34a5eb6dbd897d034c93, type: 3}
-      propertyPath: endGame
-      value: 
-      objectReference: {fileID: 4232442541799582537}
     - target: {fileID: 8783288708882681214, guid: b02c72ea5d0a34a5eb6dbd897d034c93,
         type: 3}
       propertyPath: m_Size.y
@@ -4623,11 +4623,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8515346869276836656, guid: de38d80aa41ec4f4db762a5054c35a3b,
-        type: 3}
-      propertyPath: attackMenu
-      value: 
-      objectReference: {fileID: 1605339330}
     - target: {fileID: 2133475061257537839, guid: de38d80aa41ec4f4db762a5054c35a3b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4733,6 +4728,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8515346869276836656, guid: de38d80aa41ec4f4db762a5054c35a3b,
+        type: 3}
+      propertyPath: attackMenu
+      value: 
+      objectReference: {fileID: 1605339330}
     - target: {fileID: 267442708, guid: de38d80aa41ec4f4db762a5054c35a3b, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -5419,11 +5419,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BattleMenuM
       objectReference: {fileID: 0}
-    - target: {fileID: 8515346869276836656, guid: de38d80aa41ec4f4db762a5054c35a3b,
-        type: 3}
-      propertyPath: attackMenu
-      value: 
-      objectReference: {fileID: 1029995979}
     - target: {fileID: 2133475061257537839, guid: de38d80aa41ec4f4db762a5054c35a3b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5529,6 +5524,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8515346869276836656, guid: de38d80aa41ec4f4db762a5054c35a3b,
+        type: 3}
+      propertyPath: attackMenu
+      value: 
+      objectReference: {fileID: 1029995979}
     - target: {fileID: 267442708, guid: de38d80aa41ec4f4db762a5054c35a3b, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
