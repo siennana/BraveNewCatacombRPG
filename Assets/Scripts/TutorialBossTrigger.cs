@@ -7,7 +7,7 @@ public class TutorialBossTrigger : MonoBehaviour
 {
     public GameObject BattleObject;
     public GameObject MainLevel;
-    public GameObject player;
+    public Moving player;
     private Vector3 movePlace;
     private Animator anim;
     public float speed;
@@ -34,7 +34,7 @@ public class TutorialBossTrigger : MonoBehaviour
             anim.SetFloat("Speed", 0f);
 
         }
-        else if (dist <= range && dist > desireDist) {
+        else if (!played && dist <= range && dist > desireDist) {
             anim.SetFloat("Speed", 1);
             this.transform.LookAt(player.transform);
             this.transform.position = Vector3.MoveTowards(this.transform.position, player.transform.position, speed);
@@ -42,6 +42,7 @@ public class TutorialBossTrigger : MonoBehaviour
 
         if (dist <= desireDist && !played)
         {
+            player.StopMovement();
             dialogue.nextDialogue();
             played = true;
         }

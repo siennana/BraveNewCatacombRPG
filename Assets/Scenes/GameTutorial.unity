@@ -8853,7 +8853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BattleObject: {fileID: 1153442838}
   MainLevel: {fileID: 558490439}
-  player: {fileID: 1489876075}
+  player: {fileID: 1513769823}
   speed: 0.2
   desireDist: 3
   range: 20
@@ -12747,6 +12747,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7489131334889252407, guid: cdece423564de4460a502a826b9286ea,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7489131335020132298, guid: cdece423564de4460a502a826b9286ea,
         type: 3}
