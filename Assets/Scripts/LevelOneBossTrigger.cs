@@ -36,7 +36,7 @@ public class LevelOneBossTrigger : MonoBehaviour
         {
             played = true;
             StartCoroutine(VillainAttack());
-            song.mute = true;
+        
         }
     }
 
