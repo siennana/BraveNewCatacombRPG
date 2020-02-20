@@ -20,6 +20,7 @@ public class GethinBattle : MonoBehaviour
         menuItems.SetActive(false);
         attackItems.SetActive(false);
         StartCoroutine(VillainAttack());
+        menuItems.SetActive(true);
 
     }
 

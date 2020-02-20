@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public class getDamage : MonoBehaviour
 {
     public GameObject mainScreen;
-    public Slider Health;
+    public Slider PlayerHealth;
+    public Slider EnemyHealth;
     public GameObject battle;
     public GameObject LoadingScreen;
     public Slider progressSlider;
@@ -27,28 +28,81 @@ public class getDamage : MonoBehaviour
     {
         StartCoroutine(ToBeCont());
     }
-    public void RunWin()
+
+    public void DmgEnemy()
     {
-        StartCoroutine(WinRoutine());
+        if(EnemyHealth.value >= 0.25f) {
+            EnemyHealth.value -= Random.Range(0f, 0.35f); ;
+        }
+        else
+        {
+            StartCoroutine(WinRoutine());
+        }
+
+    }
+    public void DmgPlayer()
+    {
+        if (EnemyHealth.value >= 0.25f)
+        {
+            PlayerHealth.value -= Random.Range(0f, 0.35f);
+        }
+        else
+        {
+            
+        }
     }
 
+    public void HealPlayer()
+    {
+        if (PlayerHealth.value > 0.75f)
+        {
+            PlayerHealth.value = 1f;
+        }
+        else
+        {
+            PlayerHealth.value += 0.25f;
+        }
+    }
+
+    private IEnumerator SubDmgEnemy()
+    {
+        yield return new WaitForSeconds(1.5f);
+        EnemyHealth.value -= Random.Range(0f, 0.25f); ;
+    }
+    private IEnumerator SubDmgPlayer()
+    {
+        yield return new WaitForSeconds(1.5f);
+        PlayerHealth.value -= Random.Range(0f, 0.25f);
+    }
+    private IEnumerator SubHealPlayer()
+    {
+        yield return new WaitForSeconds(1.5f);
+        if (PlayerHealth.value > 0.75f)
+        {
+            PlayerHealth.value = 1f;
+        }
+        else
+        {
+            PlayerHealth.value += 0.25f;
+        }
+    }
     private IEnumerator WinRoutine()
     {
-        Health.value = 0f;
+        EnemyHealth.value = 0f;
         yield return new WaitForSeconds(1.5f);
         battle.SetActive(false);
         mainScreen.SetActive(true);
     }
     private IEnumerator ToBeCont()
     {
-        Health.value = 0f;
+        EnemyHealth.value = 0f;
         yield return new WaitForSeconds(1f);
         battle.SetActive(false);
         LoadingScreen.SetActive(true);
     }
     private IEnumerator LoadAsynchronously()
     {
-        Health.value = 0f;
+        EnemyHealth.value = 0f;
         yield return new WaitForSeconds(1);
         AsyncOperation operation = SceneManager.LoadSceneAsync("Level 1", LoadSceneMode.Single);
         battle.SetActive(false);

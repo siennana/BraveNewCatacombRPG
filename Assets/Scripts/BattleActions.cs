@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BattleActions : MonoBehaviour
 {
+    public getDamage dmg;
     private float verticalVelocity;
     private float gravity = 14.0f;
     private Vector3 startPosition;
@@ -35,6 +36,17 @@ public class BattleActions : MonoBehaviour
         StartCoroutine(DropCoroutine());
     }
 
+    public void Heal()
+    {
+        anim.SetTrigger("Heal");
+        StartCoroutine(HealPlayer());
+    }
+
+    IEnumerator HealPlayer()
+    {
+        yield return new WaitForSeconds(1.5f);
+        dmg.HealPlayer();
+    }
 
     IEnumerator SpinCoroutine()
     {
@@ -55,12 +67,16 @@ public class BattleActions : MonoBehaviour
             yield return new WaitForSeconds(0.5f / 40);
             timePassed += Time.deltaTime;
         }
+
         anim.SetBool("Run", false);
         anim.SetTrigger("Spinkick");
+
 
         yield return new WaitForSeconds(1);
 
         this.transform.position = startPosition;
+        dmg.DmgEnemy();
+
     }
 
     IEnumerator DropCoroutine()
@@ -83,6 +99,7 @@ public class BattleActions : MonoBehaviour
             yield return new WaitForSeconds(0.5f / 40);
             timePassed += Time.deltaTime;
         }
+
         anim.SetBool("Run", false);
         anim.SetTrigger("Dropkick");
 
@@ -90,5 +107,7 @@ public class BattleActions : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         this.transform.position = startPosition;
+        dmg.DmgEnemy();
+
     }
 }

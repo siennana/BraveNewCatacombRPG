@@ -31,6 +31,8 @@ public class MobScript : MonoBehaviour
         this.transform.position = attackPosition;
         yield return new WaitForSeconds(1f);
         this.transform.position = startPosition;
-        lose.RunWin();
+        menuItems.SetActive(true);
+        lose.DmgPlayer();
+        //lose.RunWin();
     }
 }
