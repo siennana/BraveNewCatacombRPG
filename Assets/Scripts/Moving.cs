@@ -64,12 +64,12 @@ public class Moving : MonoBehaviour
     {
         anim.SetBool("Jump", false);
         Debug.Log(verticalVelocity);
-        if (!controller.isGrounded && transform.position.y < minHeight-2f)
+        if (!controller.isGrounded && transform.position.y < minHeight-10f)
         {
-            controller.Move(new Vector3(0f, 2.5f, 0f));
+            controller.Move(new Vector3(0f, 10.1f, 0f));
             Debug.Log("This One");
         }
-        else if(verticalVelocity >= 0f && transform.position.y < minHeight)
+        else if(verticalVelocity >= -0.5f && transform.position.y < minHeight)
         {
             transform.position = new Vector3(transform.position.x, minHeight, transform.position.z);
             Debug.Log("No, Here");

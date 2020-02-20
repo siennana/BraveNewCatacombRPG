@@ -28,7 +28,6 @@ public class MobBattle : MonoBehaviour
         Health.value = 1f;
         attackItems.SetActive(false);
         menuItems.SetActive(true);
-        con.Move(new Vector3(0f, 6f, 0f));
     }
 
 }
