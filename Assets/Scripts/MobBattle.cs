@@ -12,6 +12,7 @@ public class MobBattle : MonoBehaviour
     public GameObject menuItems;
     public GameObject attackItems;
     public Moving player;
+    public MoveCamera cam;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,13 @@ public class MobBattle : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        cam.FlipCamera();
+        StartCoroutine(BattleStartRoutine());
+    }
+
+    IEnumerator BattleStartRoutine()
+    {
+        yield return new WaitForSeconds(1f);
         LevelOne.SetActive(false);
         Battle.SetActive(true);
         this.gameObject.SetActive(false);
