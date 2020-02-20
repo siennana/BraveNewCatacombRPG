@@ -41,8 +41,6 @@ public class Moving : MonoBehaviour
                 verticalVelocity = jumpForce;
                 anim.SetBool("Jump", true);
             }
-            
-
 
         }
         else
@@ -65,17 +63,21 @@ public class Moving : MonoBehaviour
     private void LateUpdate()
     {
         anim.SetBool("Jump", false);
-        if (!controller.isGrounded && transform.position.y < minHeight)
+        Debug.Log(verticalVelocity);
+        if (!controller.isGrounded && transform.position.y < minHeight-2f)
         {
-            controller.Move(new Vector3(0f, 0.5f, 0f));
+            controller.Move(new Vector3(0f, 2.5f, 0f));
+            Debug.Log("This One");
         }
-        else if(transform.position.y < minHeight)
+        else if(verticalVelocity >= 0f && transform.position.y < minHeight)
         {
             transform.position = new Vector3(transform.position.x, minHeight, transform.position.z);
+            Debug.Log("No, Here");
         }
         else if(controller.isGrounded)
         {
             minHeight = transform.position.y;
+
         }
     }
 
