@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Moving : MonoBehaviour
 {
-    public float minHeight;
+    private float minHeight;
     private CharacterController controller;
     private float verticalVelocity;
     private Vector3 moveVector;

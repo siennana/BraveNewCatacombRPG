@@ -90,6 +90,7 @@ public class getDamage : MonoBehaviour
     {
         EnemyHealth.value = 0f;
         yield return new WaitForSeconds(1.5f);
+        PlayerHealth.value = 1f;
         battle.SetActive(false);
         mainScreen.SetActive(true);
     }
