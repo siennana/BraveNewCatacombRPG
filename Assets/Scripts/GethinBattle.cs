@@ -29,6 +29,7 @@ public class GethinBattle : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         anim.Play("SwordAttack");
         yield return new WaitForSeconds(1.7f);
-        endGame.RunToBe();
+        endGame.DmgPlayer();
+        //endGame.RunToBe();
     }
 }

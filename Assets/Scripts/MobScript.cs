@@ -12,11 +12,21 @@ public class MobScript : MonoBehaviour
     private Vector3 attackPosition;
     public GameObject menuItems;
     public GameObject attackItems;
+    public float minHeight;
+    private Vector3 moveVector;
+    private CharacterController controller;
+
     // Start is called before the first frame update
     void Start()
     {
-        startPosition = this.transform.position;
-        attackPosition = (player.transform.position + startPosition);
+        controller = GetComponent<CharacterController>();
+        transform.position = new Vector3(transform.position.x, Terrain.activeTerrain.SampleHeight(transform.position) + minHeight, transform.position.z);
+        startPosition = transform.position;
+        attackPosition = (player.transform.position - startPosition);
+        Debug.Log(attackPosition.x + " X");
+        Debug.Log(attackPosition.y + " Y");
+        Debug.Log(attackPosition.z + " Z");
+        moveVector = new Vector3((attackPosition.x) / 25f, 0f, (attackPosition.z) / 25f);
     }
 
     public void AttackAction()
@@ -34,8 +44,14 @@ public class MobScript : MonoBehaviour
     IEnumerator VillainAttack()
     {
         yield return new WaitForSeconds(1.5f);
-        this.transform.position = attackPosition;
-        yield return new WaitForSeconds(1f);
+        float timePassed = 0;
+        while (timePassed < 0.5f)
+        {
+            controller.Move(moveVector);
+            transform.position = new Vector3(transform.position.x, Terrain.activeTerrain.SampleHeight(transform.position) + minHeight, transform.position.z);
+            yield return new WaitForSeconds(0.5f / 40);
+            timePassed += Time.deltaTime;
+        }
         this.transform.position = startPosition;
         menuItems.SetActive(true);
         lose.DmgPlayer();
