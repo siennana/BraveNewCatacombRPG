@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Moving : MonoBehaviour
 {
+    public float minHeight;
     private CharacterController controller;
     private float verticalVelocity;
     private Vector3 moveVector;
@@ -31,7 +32,11 @@ public class Moving : MonoBehaviour
         rotation.y = Input.GetAxisRaw("Horizontal") * 180 * Time.deltaTime;
         transform.Rotate(0f, rotation.y, 0f);
 
-
+        if(!controller.isGrounded && transform.position.y < minHeight)
+        {
+            controller.Move(new Vector3(0f, 0.5f, 0f));
+        }
+       
         if (controller.isGrounded)
         {
             verticalVelocity = -gravity * Time.deltaTime;
@@ -40,11 +45,14 @@ public class Moving : MonoBehaviour
                 verticalVelocity = jumpForce;
                 anim.SetBool("Jump", true);
             }
+            
+            minHeight = transform.position.y-2.5f;
 
         }
         else
         {
             verticalVelocity -= gravity * Time.deltaTime;
+
         }
         jumpVector.y = verticalVelocity * Time.deltaTime;
         controller.Move(jumpVector * transform.localScale.y);

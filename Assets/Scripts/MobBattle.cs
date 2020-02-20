@@ -11,10 +11,12 @@ public class MobBattle : MonoBehaviour
     public GameObject Battle;
     public GameObject menuItems;
     public GameObject attackItems;
+    public Moving player;
+    private CharacterController con;
     // Start is called before the first frame update
     void Start()
     {
-        
+        con = player.GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
@@ -26,6 +28,7 @@ public class MobBattle : MonoBehaviour
         Health.value = 1f;
         attackItems.SetActive(false);
         menuItems.SetActive(true);
+        con.Move(new Vector3(0f, 6f, 0f));
     }
 
 }

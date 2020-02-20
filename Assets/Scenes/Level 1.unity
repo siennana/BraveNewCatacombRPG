@@ -194,18 +194,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 889598}
   m_CullTransparentMesh: 0
---- !u!114 &2774488 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 393373922, guid: de38d80aa41ec4f4db762a5054c35a3b,
-    type: 3}
-  m_PrefabInstance: {fileID: 2577309102252999281}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5739717 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9152745476658413449, guid: 6199cf56420ae4bb5a336af17abb4e2e,
@@ -1887,7 +1875,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainScreen: {fileID: 307709241}
-  Health: {fileID: 945900856}
+  PlayerHealth: {fileID: 1397131361}
+  EnemyHealth: {fileID: 945900856}
   battle: {fileID: 489493841}
   LoadingScreen: {fileID: 0}
   progressSlider: {fileID: 0}
@@ -3175,11 +3164,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7867834671265513772, guid: de38d80aa41ec4f4db762a5054c35a3b,
-        type: 3}
-      propertyPath: m_Name
-      value: PlayerOptionsB
-      objectReference: {fileID: 0}
     - target: {fileID: 8515346869276836656, guid: de38d80aa41ec4f4db762a5054c35a3b,
         type: 3}
       propertyPath: attackMenu
@@ -3213,6 +3197,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7867834671265513772, guid: de38d80aa41ec4f4db762a5054c35a3b,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerOptionsB
+      objectReference: {fileID: 0}
     - target: {fileID: 2133475062130029215, guid: de38d80aa41ec4f4db762a5054c35a3b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3231,6 +3220,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1397131359}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1397131361 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1412868651, guid: de38d80aa41ec4f4db762a5054c35a3b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1397131359}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1401393648
 GameObject:
   m_ObjectHideFlags: 0
@@ -4595,6 +4596,10 @@ PrefabInstance:
       propertyPath: enemy
       value: 
       objectReference: {fileID: 1849247499}
+    - target: {fileID: 1017739276, guid: 2ae603367c08b4817ac387a5512c00bf, type: 3}
+      propertyPath: dmg
+      value: 
+      objectReference: {fileID: 648396217}
     - target: {fileID: 8367462351018740477, guid: 2ae603367c08b4817ac387a5512c00bf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4862,11 +4867,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7867834671265513772, guid: de38d80aa41ec4f4db762a5054c35a3b,
-        type: 3}
-      propertyPath: m_Name
-      value: PlayerOptionsC
-      objectReference: {fileID: 0}
     - target: {fileID: 8515346869276836656, guid: de38d80aa41ec4f4db762a5054c35a3b,
         type: 3}
       propertyPath: attackMenu
@@ -4900,6 +4900,33 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133475061821243918, guid: de38d80aa41ec4f4db762a5054c35a3b,
+        type: 3}
+      propertyPath: m_Name
+      value: Heal
+      objectReference: {fileID: 0}
+    - target: {fileID: 470379242894692244, guid: de38d80aa41ec4f4db762a5054c35a3b,
+        type: 3}
+      propertyPath: m_text
+      value: 'Heal
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7867834671265513772, guid: de38d80aa41ec4f4db762a5054c35a3b,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerOptionsC
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133475061821243916, guid: de38d80aa41ec4f4db762a5054c35a3b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1131877679}
+    - target: {fileID: 2133475061821243916, guid: de38d80aa41ec4f4db762a5054c35a3b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Heal
       objectReference: {fileID: 0}
     - target: {fileID: 2133475062130029215, guid: de38d80aa41ec4f4db762a5054c35a3b,
         type: 3}
@@ -5017,7 +5044,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainScreen: {fileID: 307709241}
-  Health: {fileID: 2774488}
+  PlayerHealth: {fileID: 0}
+  EnemyHealth: {fileID: 0}
   battle: {fileID: 6279552425055874271}
   LoadingScreen: {fileID: 1401393648}
   progressSlider: {fileID: 0}
@@ -5673,11 +5701,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7867834671265513772, guid: de38d80aa41ec4f4db762a5054c35a3b,
-        type: 3}
-      propertyPath: m_Name
-      value: PlayerOptionsM
-      objectReference: {fileID: 0}
     - target: {fileID: 8515346869276836656, guid: de38d80aa41ec4f4db762a5054c35a3b,
         type: 3}
       propertyPath: attackMenu
@@ -5711,6 +5734,33 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2133475061821243918, guid: de38d80aa41ec4f4db762a5054c35a3b,
+        type: 3}
+      propertyPath: m_Name
+      value: Heal
+      objectReference: {fileID: 0}
+    - target: {fileID: 470379242894692244, guid: de38d80aa41ec4f4db762a5054c35a3b,
+        type: 3}
+      propertyPath: m_text
+      value: 'Heal
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7867834671265513772, guid: de38d80aa41ec4f4db762a5054c35a3b,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerOptionsM
+      objectReference: {fileID: 0}
+    - target: {fileID: 2133475061821243916, guid: de38d80aa41ec4f4db762a5054c35a3b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 793733835}
+    - target: {fileID: 2133475061821243916, guid: de38d80aa41ec4f4db762a5054c35a3b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Heal
+      objectReference: {fileID: 0}
     - target: {fileID: 2133475062130029215, guid: de38d80aa41ec4f4db762a5054c35a3b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -5723,6 +5773,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de38d80aa41ec4f4db762a5054c35a3b, type: 3}
+--- !u!114 &5854136713718130239 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1412868651, guid: de38d80aa41ec4f4db762a5054c35a3b,
+    type: 3}
+  m_PrefabInstance: {fileID: 5854136713718130238}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5854136713968324496
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5739,6 +5801,10 @@ PrefabInstance:
       propertyPath: enemy
       value: 
       objectReference: {fileID: 1769896742}
+    - target: {fileID: 1017739276, guid: 2ae603367c08b4817ac387a5512c00bf, type: 3}
+      propertyPath: dmg
+      value: 
+      objectReference: {fileID: 5854136715142795896}
     - target: {fileID: 8367462351018740477, guid: 2ae603367c08b4817ac387a5512c00bf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6359,7 +6425,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainScreen: {fileID: 307709241}
-  Health: {fileID: 817325165}
+  PlayerHealth: {fileID: 5854136713718130239}
+  EnemyHealth: {fileID: 817325165}
   battle: {fileID: 5854136714588781684}
   LoadingScreen: {fileID: 0}
   progressSlider: {fileID: 0}
@@ -6770,6 +6837,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6544560036945453739, guid: aee80a96266fa40f895606b797dbfecf,
+        type: 3}
+      propertyPath: minHeight
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6544560036945453734, guid: aee80a96266fa40f895606b797dbfecf,
         type: 3}

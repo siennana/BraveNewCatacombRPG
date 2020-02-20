@@ -19,6 +19,7 @@ public class VillainBattle : MonoBehaviour
         menuItems.SetActive(false);
         attackItems.SetActive(false);
         StartCoroutine(VillainAttack());
+        menuItems.SetActive(true);
 
     }
 
@@ -27,6 +28,6 @@ public class VillainBattle : MonoBehaviour
         yield return new WaitForSeconds(0.8f);
         anim.SetTrigger("Attack");
         yield return new WaitForSeconds(2f);
-        loserLoad.RunProcess();
+        loserLoad.DmgPlayer();
     }
 }
