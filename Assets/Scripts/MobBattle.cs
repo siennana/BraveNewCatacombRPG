@@ -12,14 +12,18 @@ public class MobBattle : MonoBehaviour
     public GameObject menuItems;
     public GameObject attackItems;
     public Moving player;
-    private CharacterController con;
     // Start is called before the first frame update
     void Start()
     {
-        con = player.GetComponent<CharacterController>();
+
     }
 
     // Update is called once per frame
+    private void Update()
+    {
+        
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         LevelOne.SetActive(false);
