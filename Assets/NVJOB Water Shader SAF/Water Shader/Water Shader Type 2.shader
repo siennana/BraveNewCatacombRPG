@@ -14,7 +14,7 @@ Shader "#NVJOB/Nature/Water Shader Type 2" {
 Properties{
 //----------------------------------------------
 
-_Color("Main Color", Color) = (0.15,0.161,0.16,1)
+_Color("Main Color", Color) = (128,0,128,1)
 
 _MainTex("Main Texture", 2D) = "white" {}
 _Detail("Main Detail", 2D) = "gray" {}
