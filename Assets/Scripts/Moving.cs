@@ -32,10 +32,6 @@ public class Moving : MonoBehaviour
         rotation.y = Input.GetAxisRaw("Horizontal") * 180 * Time.deltaTime;
         transform.Rotate(0f, rotation.y, 0f);
 
-        if(!controller.isGrounded && transform.position.y < minHeight)
-        {
-            controller.Move(new Vector3(0f, 0.5f, 0f));
-        }
        
         if (controller.isGrounded)
         {
@@ -46,7 +42,7 @@ public class Moving : MonoBehaviour
                 anim.SetBool("Jump", true);
             }
             
-            minHeight = transform.position.y-2.5f;
+
 
         }
         else
@@ -69,6 +65,18 @@ public class Moving : MonoBehaviour
     private void LateUpdate()
     {
         anim.SetBool("Jump", false);
+        if (!controller.isGrounded && transform.position.y < minHeight)
+        {
+            controller.Move(new Vector3(0f, 0.5f, 0f));
+        }
+        else if(transform.position.y < minHeight)
+        {
+            transform.position = new Vector3(transform.position.x, minHeight, transform.position.z);
+        }
+        else if(controller.isGrounded)
+        {
+            minHeight = transform.position.y;
+        }
     }
 
     public void StopMovement()
