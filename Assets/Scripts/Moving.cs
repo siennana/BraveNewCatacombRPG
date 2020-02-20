@@ -63,20 +63,17 @@ public class Moving : MonoBehaviour
     private void LateUpdate()
     {
         anim.SetBool("Jump", false);
-        Debug.Log(verticalVelocity);
         if (!controller.isGrounded && transform.position.y < minHeight-10f)
         {
             controller.Move(new Vector3(0f, 10.1f, 0f));
-            Debug.Log("This One");
         }
         else if(verticalVelocity >= -0.5f && transform.position.y < minHeight)
         {
             transform.position = new Vector3(transform.position.x, minHeight, transform.position.z);
-            Debug.Log("No, Here");
         }
         else if(controller.isGrounded)
         {
-            minHeight = transform.position.y;
+            minHeight = Terrain.activeTerrain.SampleHeight(transform.position);
 
         }
     }
