@@ -35,7 +35,10 @@ public class BattleActions : MonoBehaviour
     {
         StartCoroutine(DropCoroutine());
     }
-
+    public void SpecialAttack()
+    {
+        StartCoroutine(SpecialCoroutine());
+    }
     public void Heal()
     {
         anim.SetTrigger("Heal");
@@ -75,7 +78,7 @@ public class BattleActions : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         this.transform.position = startPosition;
-        dmg.DmgEnemy();
+        dmg.DmgEnemy(1f);
 
     }
 
@@ -107,7 +110,14 @@ public class BattleActions : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         this.transform.position = startPosition;
-        dmg.DmgEnemy();
+        dmg.DmgEnemy(1f);
 
+    }
+
+    IEnumerator SpecialCoroutine()
+    {
+        anim.SetTrigger("Special");
+        yield return new WaitForSeconds(1);
+        dmg.DmgEnemy(5f);
     }
 }

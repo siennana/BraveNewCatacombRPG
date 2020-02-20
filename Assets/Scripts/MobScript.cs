@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MobScript : MonoBehaviour
 {
     public getDamage lose;
     public GameObject player;
+    public Slider EnemyHealth;
     private Vector3 startPosition;
     private Vector3 attackPosition;
     public GameObject menuItems;
@@ -21,7 +23,11 @@ public class MobScript : MonoBehaviour
     {
         menuItems.SetActive(false);
         attackItems.SetActive(false);
-        StartCoroutine(VillainAttack());
+        if(EnemyHealth.value > 0f)
+        {
+            StartCoroutine(VillainAttack());
+        }
+
 
     }
 

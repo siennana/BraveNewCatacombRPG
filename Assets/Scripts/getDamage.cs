@@ -13,6 +13,7 @@ public class getDamage : MonoBehaviour
     public GameObject LoadingScreen;
     public Slider progressSlider;
     public Text progressText;
+    public Button SpecialAttack;
 
     // Start is called before the first frame update
     void Start()
@@ -29,27 +30,38 @@ public class getDamage : MonoBehaviour
         StartCoroutine(ToBeCont());
     }
 
-    public void DmgEnemy()
+    public void DmgEnemy(float mult)
     {
-        if(EnemyHealth.value >= 0.25f) {
-            EnemyHealth.value -= Random.Range(0f, 0.35f); ;
+        var damage = Random.Range(0f, 0.35f) * mult;
+        if (EnemyHealth.value - damage > 0f) {
+            EnemyHealth.value -= damage;
         }
-        else
+        else if(EnemyHealth.value - damage <= 0f)
         {
+            EnemyHealth.value = 0f;
             StartCoroutine(WinRoutine());
         }
 
     }
     public void DmgPlayer()
     {
-        if (EnemyHealth.value >= 0.25f)
+        var damage = Random.Range(0.2f, 0.35f);
+        if (PlayerHealth.value-damage > 0f)
         {
-            PlayerHealth.value -= Random.Range(0f, 0.35f);
+            PlayerHealth.value -= damage;
         }
-        else
+        else if(PlayerHealth.value - damage <= 0f)
         {
-            
+            PlayerHealth.value = 0f;
         }
+
+        if(PlayerHealth.value <= 0.35f)
+        {
+            SpecialAttack.interactable = true;
+            SpecialAttack.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = "Special";
+        }
+
+
     }
 
     public void HealPlayer()
