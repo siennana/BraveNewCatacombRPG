@@ -1,15 +1,17 @@
-﻿//using System.Collections;
-//using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveCamera : MonoBehaviour
 {
     public Moving Player;
     public Vector3 offset;
+    private Animator anim;
 
     void Start()
     {
         offset = transform.position - Player.transform.position;
+        anim = GetComponent<Animator>();
     }
 
     void LateUpdate()
@@ -20,5 +22,19 @@ public class MoveCamera : MonoBehaviour
         offset = Quaternion.AngleAxis(rot, Vector3.up) * offset;
         transform.Translate(0f, 0f, 3 * Input.GetAxis("Vertical") * Time.deltaTime);
         transform.position = Player.transform.position + offset;
+    }
+
+    public void FlipCamera()
+    {
+        StartCoroutine(SubFlip());
+    }
+    
+    IEnumerator SubFlip()
+    {
+        do
+        {
+            transform.Rotate(0f, 0f, 7.5f);
+            yield return new WaitForSeconds(1f / 360f);
+        } while (transform.rotation.z < 360);
     }
 }
