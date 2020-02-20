@@ -20,7 +20,8 @@ public class BattleActions : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
-        startPosition = this.transform.position;
+        transform.position = new Vector3(transform.position.x, Terrain.activeTerrain.SampleHeight(transform.position), transform.position.z);
+        startPosition = transform.position;
         attackPosition = (enemy.transform.position - startPosition);
         moveVector = new Vector3((attackPosition.x-1.9f)/25f, 0f,(attackPosition.z-1.9f)/25f);
 
