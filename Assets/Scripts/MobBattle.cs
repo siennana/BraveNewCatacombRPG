@@ -12,7 +12,7 @@ public class MobBattle : MonoBehaviour
     public GameObject menuItems;
     public GameObject attackItems;
     public Moving player;
-    public MoveCamera cam;
+    public CameraFlipper cam;
     // Start is called before the first frame update
     void Start()
     {
