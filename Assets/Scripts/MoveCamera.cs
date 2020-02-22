@@ -7,6 +7,7 @@ public class MoveCamera : MonoBehaviour
     public Moving Player;
     public Vector3 offset;
     private Animator anim;
+    private bool flipping;
 
     void Start()
     {
@@ -17,6 +18,14 @@ public class MoveCamera : MonoBehaviour
     void LateUpdate()
     {
 
+        if (!flipping)
+        {
+            transform.eulerAngles = new Vector3(
+            10f,
+            transform.rotation.y,
+            0f
+        );
+        }
         var rot = Input.GetAxisRaw("Horizontal") * Time.deltaTime * 180;
         this.transform.RotateAround(Player.transform.position, Vector3.up,rot);
         offset = Quaternion.AngleAxis(rot, Vector3.up) * offset;
@@ -26,15 +35,19 @@ public class MoveCamera : MonoBehaviour
 
     public void FlipCamera()
     {
+        flipping = true;
         StartCoroutine(SubFlip());
     }
     
     IEnumerator SubFlip()
     {
+        float timePassed = 0f;
         do
         {
-            transform.Rotate(0f, 0f, 7.5f);
+            transform.Rotate(0f, 0f, 9f);
             yield return new WaitForSeconds(1f / 360f);
-        } while (transform.rotation.z < 360);
+            timePassed += Time.deltaTime;
+        } while (timePassed < 1.5f);
+        flipping = false;
     }
 }
