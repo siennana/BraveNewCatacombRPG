@@ -24,7 +24,7 @@ public class MoveCamera : MonoBehaviour
             10f,
             transform.rotation.y,
             0f
-        );
+            );
         }
         var rot = Input.GetAxisRaw("Horizontal") * Time.deltaTime * 180;
         this.transform.RotateAround(Player.transform.position, Vector3.up,rot);
@@ -47,7 +47,7 @@ public class MoveCamera : MonoBehaviour
             transform.Rotate(0f, 0f, 9f);
             yield return new WaitForSeconds(1f / 360f);
             timePassed += Time.deltaTime;
-        } while (timePassed < 1.5f);
+        } while (timePassed < 1.49f);
         flipping = false;
     }
 }
