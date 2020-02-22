@@ -214,7 +214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: {fileID: 945900856}
   LevelOne: {fileID: 307709241}
-  Battle: {fileID: 489493841}
+  Battle: {fileID: 489493844}
   menuItems: {fileID: 1875583074}
   attackItems: {fileID: 1261304114}
   player: {fileID: 600148641}
@@ -626,7 +626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: {fileID: 945900856}
   LevelOne: {fileID: 307709241}
-  Battle: {fileID: 489493841}
+  Battle: {fileID: 489493844}
   menuItems: {fileID: 1875583074}
   attackItems: {fileID: 1261304114}
   player: {fileID: 600148641}
@@ -651,7 +651,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: {fileID: 945900856}
   LevelOne: {fileID: 307709241}
-  Battle: {fileID: 489493841}
+  Battle: {fileID: 489493844}
   menuItems: {fileID: 1875583074}
   attackItems: {fileID: 1261304114}
   player: {fileID: 600148641}
@@ -672,7 +672,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &307709242
 Transform:
   m_ObjectHideFlags: 0
@@ -1744,13 +1744,14 @@ GameObject:
   m_Component:
   - component: {fileID: 489493842}
   - component: {fileID: 489493843}
+  - component: {fileID: 489493844}
   m_Layer: 0
   m_Name: BeeBattle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &489493842
 Transform:
   m_ObjectHideFlags: 0
@@ -1867,6 +1868,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &489493844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489493841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bd85aba49ab746aa85e032b5e04984b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 1767049861}
+  Enemy: {fileID: 1849247502}
 --- !u!1 &506736915 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6544560037343489962, guid: aee80a96266fa40f895606b797dbfecf,
@@ -3424,11 +3439,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 267442708, guid: de38d80aa41ec4f4db762a5054c35a3b, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 267442708, guid: de38d80aa41ec4f4db762a5054c35a3b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8130323903876549619, guid: de38d80aa41ec4f4db762a5054c35a3b,
         type: 3}
@@ -3443,12 +3458,12 @@ PrefabInstance:
     - target: {fileID: 1953646542671153929, guid: de38d80aa41ec4f4db762a5054c35a3b,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1953646542671153929, guid: de38d80aa41ec4f4db762a5054c35a3b,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2133475062130029215, guid: de38d80aa41ec4f4db762a5054c35a3b,
         type: 3}
@@ -4515,7 +4530,7 @@ MonoBehaviour:
   EnemyHealth: {fileID: 945900856}
   menuItems: {fileID: 1875583074}
   attackItems: {fileID: 1261304114}
-  minHeight: 1
+  minHeight: 0.5
 --- !u!143 &1849247503
 CharacterController:
   m_ObjectHideFlags: 0
@@ -4560,7 +4575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: {fileID: 817325165}
   LevelOne: {fileID: 307709241}
-  Battle: {fileID: 5854136714588781684}
+  Battle: {fileID: 0}
   menuItems: {fileID: 838175378}
   attackItems: {fileID: 1029995979}
   player: {fileID: 600148641}
@@ -8538,6 +8553,11 @@ PrefabInstance:
         type: 3}
       propertyPath: minHeight
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6544560036945453739, guid: aee80a96266fa40f895606b797dbfecf,
+        type: 3}
+      propertyPath: speed
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6544560036945453734, guid: aee80a96266fa40f895606b797dbfecf,
         type: 3}

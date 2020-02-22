@@ -8,7 +8,7 @@ public class MobBattle : MonoBehaviour
 {
     public Slider Health;
     public GameObject LevelOne;
-    public GameObject Battle;
+    public InitBattle Battle;
     public GameObject menuItems;
     public GameObject attackItems;
     public Moving player;
@@ -35,7 +35,13 @@ public class MobBattle : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
         LevelOne.SetActive(false);
-        Battle.SetActive(true);
+        Battle.gameObject.SetActive(true);
+        Battle.transform.position = new Vector3(
+           player.transform.position.x,
+           Terrain.activeTerrain.SampleHeight(transform.position) + 12f,
+           player.transform.position.z
+           );
+        Battle.UpdateValues();
         this.gameObject.SetActive(false);
         Health.value = 1f;
         attackItems.SetActive(false);

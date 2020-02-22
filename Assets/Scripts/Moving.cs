@@ -12,6 +12,7 @@ public class Moving : MonoBehaviour
     private float gravity = 14.0f;
     private float jumpForce = 10.0f;
     private bool canMove = true;
+    public float speed = 1f;
 
     private Animator anim;
 
@@ -52,7 +53,7 @@ public class Moving : MonoBehaviour
         controller.Move(jumpVector * transform.localScale.y);
 
         if (canMove) { 
-            controller.Move(Quaternion.AngleAxis(transform.eulerAngles.y, Vector3.up) * moveVector * transform.localScale.y);
+            controller.Move(Quaternion.AngleAxis(transform.eulerAngles.y, Vector3.up) * moveVector * transform.localScale.y* speed);
             anim.SetFloat("Speed", Input.GetAxisRaw("Vertical"));
         }
         else
