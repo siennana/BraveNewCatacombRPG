@@ -33,7 +33,7 @@ public class MobBattle : MonoBehaviour
 
     IEnumerator BattleStartRoutine()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.5f);
         LevelOne.SetActive(false);
         Battle.SetActive(true);
         this.gameObject.SetActive(false);

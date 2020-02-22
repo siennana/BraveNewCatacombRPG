@@ -324,6 +324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 600148641}
   offset: {x: 0, y: 0, z: 0}
+  initRotate: {x: 10, y: 0, z: 0}
 --- !u!45 &104852281
 Skybox:
   m_ObjectHideFlags: 0
@@ -3327,16 +3328,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7867834671265513772, guid: de38d80aa41ec4f4db762a5054c35a3b,
-        type: 3}
-      propertyPath: m_Name
-      value: PlayerOptionsB
-      objectReference: {fileID: 0}
     - target: {fileID: 8515346869276836656, guid: de38d80aa41ec4f4db762a5054c35a3b,
         type: 3}
       propertyPath: attackMenu
       value: 
       objectReference: {fileID: 1261304114}
+    - target: {fileID: 7867834671265513772, guid: de38d80aa41ec4f4db762a5054c35a3b,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerOptionsB
+      objectReference: {fileID: 0}
     - target: {fileID: 267442708, guid: de38d80aa41ec4f4db762a5054c35a3b, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -6336,16 +6337,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7867834671265513772, guid: de38d80aa41ec4f4db762a5054c35a3b,
-        type: 3}
-      propertyPath: m_Name
-      value: PlayerOptionsC
-      objectReference: {fileID: 0}
     - target: {fileID: 8515346869276836656, guid: de38d80aa41ec4f4db762a5054c35a3b,
         type: 3}
       propertyPath: attackMenu
       value: 
       objectReference: {fileID: 1605339330}
+    - target: {fileID: 7867834671265513772, guid: de38d80aa41ec4f4db762a5054c35a3b,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerOptionsC
+      objectReference: {fileID: 0}
     - target: {fileID: 267442708, guid: de38d80aa41ec4f4db762a5054c35a3b, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -7257,16 +7258,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7867834671265513772, guid: de38d80aa41ec4f4db762a5054c35a3b,
-        type: 3}
-      propertyPath: m_Name
-      value: PlayerOptionsM
-      objectReference: {fileID: 0}
     - target: {fileID: 8515346869276836656, guid: de38d80aa41ec4f4db762a5054c35a3b,
         type: 3}
       propertyPath: attackMenu
       value: 
       objectReference: {fileID: 1029995979}
+    - target: {fileID: 7867834671265513772, guid: de38d80aa41ec4f4db762a5054c35a3b,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerOptionsM
+      objectReference: {fileID: 0}
     - target: {fileID: 267442708, guid: de38d80aa41ec4f4db762a5054c35a3b, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
