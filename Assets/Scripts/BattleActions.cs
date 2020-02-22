@@ -14,6 +14,8 @@ public class BattleActions : MonoBehaviour
     private Vector3 moveVector;
     private Vector3 gravityVector;
     public GameObject enemy;
+    public Camera mainCamera;
+    public Camera subCamera;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +40,8 @@ public class BattleActions : MonoBehaviour
     }
     public void SpecialAttack()
     {
+        subCamera.enabled = true;
+        mainCamera.enabled = false;
         StartCoroutine(SpecialCoroutine());
     }
     public void Heal()
@@ -119,6 +123,8 @@ public class BattleActions : MonoBehaviour
     {
         anim.SetTrigger("Special");
         yield return new WaitForSeconds(1);
+        mainCamera.enabled = true;
+        subCamera.enabled = false;
         dmg.DmgEnemy(5f);
     }
 }
