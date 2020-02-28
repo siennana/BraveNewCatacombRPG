@@ -14,6 +14,8 @@ public class BattleActions : MonoBehaviour
     private Vector3 moveVector;
     private Vector3 gravityVector;
     public GameObject enemy;
+    public Camera mainCamera;
+    public Camera subCamera;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +29,14 @@ public class BattleActions : MonoBehaviour
 
     }
 
+    public void UpdateValues()
+    {
+        transform.position = new Vector3(transform.position.x, Terrain.activeTerrain.SampleHeight(transform.position), transform.position.z);
+        startPosition = transform.position;
+        attackPosition = (enemy.transform.position - startPosition);
+        moveVector = new Vector3((attackPosition.x - 1.9f) / 25f, 0f, (attackPosition.z - 1.9f) / 25f);
+    }
+
     public void SpinAttack()
     {
         StartCoroutine(SpinCoroutine());
@@ -38,6 +48,8 @@ public class BattleActions : MonoBehaviour
     }
     public void SpecialAttack()
     {
+        subCamera.enabled = true;
+        mainCamera.enabled = false;
         StartCoroutine(SpecialCoroutine());
     }
     public void Heal()
@@ -67,7 +79,11 @@ public class BattleActions : MonoBehaviour
         float timePassed = 0;
         while(timePassed < 0.5f) {
             controller.Move(moveVector);
-            controller.Move(gravityVector);
+            //controller.Move(gravityVector);
+            transform.position = new Vector3(
+                transform.position.x, 
+                Terrain.activeTerrain.SampleHeight(transform.position), 
+                transform.position.z);
             yield return new WaitForSeconds(0.5f / 40);
             timePassed += Time.deltaTime;
         }
@@ -99,7 +115,11 @@ public class BattleActions : MonoBehaviour
         while (timePassed < 0.5f)
         {
             controller.Move(moveVector);
-            controller.Move(gravityVector);
+            //controller.Move(gravityVector);
+            transform.position = new Vector3(
+                transform.position.x,
+                Terrain.activeTerrain.SampleHeight(transform.position),
+                transform.position.z);
             yield return new WaitForSeconds(0.5f / 40);
             timePassed += Time.deltaTime;
         }
@@ -119,6 +139,8 @@ public class BattleActions : MonoBehaviour
     {
         anim.SetTrigger("Special");
         yield return new WaitForSeconds(1);
+        mainCamera.enabled = true;
+        subCamera.enabled = false;
         dmg.DmgEnemy(5f);
     }
 }

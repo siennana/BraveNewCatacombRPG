@@ -12,6 +12,7 @@ public class Moving : MonoBehaviour
     private float gravity = 14.0f;
     private float jumpForce = 10.0f;
     private bool canMove = true;
+    public float speed = 1f;
 
     private Animator anim;
 
@@ -32,7 +33,6 @@ public class Moving : MonoBehaviour
         rotation.y = Input.GetAxisRaw("Horizontal") * 180 * Time.deltaTime;
         transform.Rotate(0f, rotation.y, 0f);
 
-       
         if (controller.isGrounded)
         {
             verticalVelocity = -gravity * Time.deltaTime;
@@ -52,7 +52,7 @@ public class Moving : MonoBehaviour
         controller.Move(jumpVector * transform.localScale.y);
 
         if (canMove) { 
-            controller.Move(Quaternion.AngleAxis(transform.eulerAngles.y, Vector3.up) * moveVector * transform.localScale.y);
+            controller.Move(Quaternion.AngleAxis(transform.eulerAngles.y, Vector3.up) * moveVector * transform.localScale.y* speed);
             anim.SetFloat("Speed", Input.GetAxisRaw("Vertical"));
         }
         else
@@ -63,18 +63,10 @@ public class Moving : MonoBehaviour
     private void LateUpdate()
     {
         anim.SetBool("Jump", false);
-        if (!controller.isGrounded && transform.position.y < minHeight-10f)
-        {
-            controller.Move(new Vector3(0f, 10.1f, 0f));
-        }
-        else if(verticalVelocity >= -0.5f && transform.position.y < minHeight)
+        minHeight = Terrain.activeTerrain.SampleHeight(transform.position);
+        if ((!controller.isGrounded || verticalVelocity >= -0.5f) && transform.position.y < minHeight)
         {
             transform.position = new Vector3(transform.position.x, minHeight, transform.position.z);
-        }
-        else if(controller.isGrounded)
-        {
-            minHeight = Terrain.activeTerrain.SampleHeight(transform.position);
-
         }
     }
 

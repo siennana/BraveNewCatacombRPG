@@ -16,7 +16,6 @@ public class MoveCamera : MonoBehaviour
 
     void LateUpdate()
     {
-
         var rot = Input.GetAxisRaw("Horizontal") * Time.deltaTime * 180;
         this.transform.RotateAround(Player.transform.position, Vector3.up,rot);
         offset = Quaternion.AngleAxis(rot, Vector3.up) * offset;
@@ -24,17 +23,5 @@ public class MoveCamera : MonoBehaviour
         transform.position = Player.transform.position + offset;
     }
 
-    public void FlipCamera()
-    {
-        StartCoroutine(SubFlip());
-    }
-    
-    IEnumerator SubFlip()
-    {
-        do
-        {
-            transform.Rotate(0f, 0f, 7.5f);
-            yield return new WaitForSeconds(1f / 360f);
-        } while (transform.rotation.z < 360);
-    }
+
 }
